@@ -1,0 +1,239 @@
+{
+  "content": [
+    {
+      "title": "Tenant Screening",
+      "companies": [
+        {
+          "name": "Naborly",
+          "type": "Risk Assessment Report",
+          "url": "https://www.naborly.com/",
+          "capital": "$8.5 million",
+          "investors": "Trinity, First Round Capital, Y Combinator",
+          "description": "Naborly’s screening service provides landlords in the U.S. and Canada with rental forms they send to potential tenants, who fill in their employment, financial, and rental history for verification. Naborly feeds roughly 500 data points across credit, criminal, and rental history records sourced from private data vendors, governments, and open source databases to a machine learning system — SHERLY — that generates a risk score between 400 and 900 (the higher the better) within 90 minutes. From within an online dashboard, landlords can provide feedback and endorsements for tenants, who can use their profile to apply to future rental.<br><br>NaborlyShield, in addition to applicant screening it handles the eviction process in the event a tenant refuses to pay or can’t cover the first month’s rent. Naborly works with insolvent tenants to offer loans, and it will cover up to six months’ rent if a guest leaves without providing notice and up to $2,000 in damages if that guest causes damage to the property.",
+          "target": "Landlords and property managers",
+          "scale": "Serves more than 850,000 rental units across the U.S. and Canada"
+        },
+        {
+          "name": "RentSpree",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "TurboTenant",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Avail",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        }
+      ]
+    },
+    {
+      "title": "Homebuying",
+      "companies": [
+        {
+          "name": "Divvy Homes",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Flyhomes",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Knock",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Opendoor",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Homelight",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Aalto",
+          "type": "Homeowner marketplace",
+          "url": "https://aalto.com",
+          "capital": "$17M",
+          "investors": "Defy VC, Bacground Capital, Maple VC, Sequoia Capital",
+          "description": "Aalto is an online marketplace that is built for sellers and buyers, not real estate agents. We've built Aalto to remove all the traditional real estate friction, saving you time, stress and money. Unlike traditional brokerages, sellers can try Aalto without signing a contract as they build up a waitlist of buyers.",
+          "target": "Homebuyers and home sellers",
+          "scale": "Since launching in the Bay Area, Aalto has built up a network of more than 30,000 buyers and more than two dozen homes have been sold via the marketplace. Currently, about 85 homes are listed for sale on its platform, with an average of one new home being added per day."
+        }
+      ]
+    },
+    {
+      "title": "Home Financing",
+      "companies": [
+        {
+          "name": "Tomo",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Better",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Roostify",
+          "type": "Mortgage lending API",
+          "url": "http://www.roostify.com",
+          "capital": "$65M",
+          "investors": "Mouro Capital, Colchis Capital Management, Point72 Ventures, JP Morgan Chase, Cota Capital, Stone Point Capital, TD Bank",
+          "description": "Roostify Document Intelligence Service is a mortgage document processing service that streamlines underwriting operations through automated document classification, data extraction, and data validation.",
+          "target": "Mortgage lenders",
+          "scale": "Processes $50 billion in loan volume each month"
+        }
+      ]
+    },
+    {
+      "title": "Construction",
+      "companies": [
+        {
+          "name": "WorkerSense",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Built Robotics",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Adobu",
+          "type": "Accessory Dwelling Unit  Pre-fab designer and builder",
+          "url": "https://www.builtrobotics.com/",
+          "capital": "$23.5 million",
+          "investors": "Initialized Capital, Norwest Venture Partners",
+          "description": "Abodu offers three housing models today: a studio, a one-bedroom, and a two-bedroom, with prices starting at $189,000, $199,000 and $259,000 respectively. Those prices include standard installation, foundations, and utilities, but exclude city permit fees. Additional, more premium options and finishes are available as well. Homeowners can buy the units online or visit the units in-person at the company’s showroom in Redwood City.",
+          "target": "Homeowners that want to build granny flas",
+          "scale": "Dozens of completed ADUs operating in the Bay Area, Los Angeles, and Seattle"
+        },
+        {
+          "name": "Indus.ai",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "The Wild",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        }
+      ]
+    },
+    {
+      "title": "Shared Living",
+      "companies": [
+        {
+          "name": "Starcity",
+          "type": "Co-living platform",
+          "url": "https://www.starcity.com",
+          "capital": "$51.3M",
+          "investors": "Peak State Ventures, Reshape, Deciens Capital, Bullpen Capital, Pay it Forward VC, Y Combinator",
+          "description": "Starcity is a developer and operator with full-stack real estate development, design and management capabilities.<br><br>By expanding the communal areas and reducing the size of the units, Starcity is able to offer residents a discount of 20-30% on new apartments, which amounts to a monthly rent that ranges between $1,000 and $2,000. Another perk is Starcity’s app, which allows residents to connect with their neighbors — a hyperlocalized form of Nextdoor, if you will.",
+          "target": "Renters in expensive cities",
+          "scale": "1,500 units in operation "
+        },
+        {
+          "name": "Bungalow",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        },
+        {
+          "name": "Nesterly",
+          "type": "",
+          "url": "",
+          "capital": "",
+          "investors": "",
+          "description": "",
+          "target": "",
+          "scale": ""
+        }
+      ]
+    }
+  ]
+}

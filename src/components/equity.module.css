@@ -1,0 +1,53 @@
+.container {
+    text-align: center;
+}
+.content {
+    width: 70%;
+    max-width: 400px;
+    display: inline-block;
+    text-align: left;
+}
+.content p {
+    text-align: left;
+    padding: 0 0 20px 20px;
+}
+
+.heading {
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.heading:hover {
+    background: rgba(255,255,255, .4);
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.chevron-right::before, .chevron-bottom::before {
+    border-style: solid;
+    border-width: 0.15em 0.15em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.45em;
+    left: 0.15em;
+    position: relative;
+    top: 0.3em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.45em;
+    margin-right: 6px;
+}
+
+.chevron-right:before {
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.chevron-bottom:before {
+    top: .3em;
+    transform: rotate(135deg);
+}

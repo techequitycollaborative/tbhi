@@ -1,0 +1,54 @@
+.companies h1, .companies h2, .companies h3, .companies p, .companies th, .companies td {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #172f6e;
+}
+
+.companies {
+    max-width: 1000px;
+    margin: auto;
+}
+.companies table {
+    border-collapse:separate; 
+    border-spacing: 0 1em;
+}
+.companies td {
+    min-width: 150px;
+    vertical-align: top;
+}
+
+.close-button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 10px;
+    float: right;
+    opacity: .7;
+}
+.close-button:hover {
+    opacity: .4;
+}
+.close-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.column1 {
+    width: 15%;
+}
+.column2 {
+    width: 20%;
+}
+.column3 {
+    width: 20%;
+}
+.column4 {
+    width: 45%;
+}

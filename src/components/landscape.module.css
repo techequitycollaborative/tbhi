@@ -1,0 +1,67 @@
+.landscape h1, .landscape h2, .landscape h3, .landscape p, .landscape th, .landscape td {
+    color: #172f6e;
+}
+.landscape {
+    background-color: #f2f8fb;
+    height: 100%;
+}
+
+.header {
+    display: block;
+    text-align: center;
+    background-color: #e9f3f8;
+    padding-bottom: 20px;
+}
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.heading {
+    width: 14%;
+    padding: 40px 10px;
+    text-align: center;
+    border: 1px solid;
+    margin: 2% 1% 1% 1%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.heading:hover {
+    background-color: #b2bac3;
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+
+.landscape-content {
+    padding-top: 40px;
+}
+
+
+.landscape table {
+    width: 1000px;
+    margin: auto;
+    border-collapse: collapse;
+}
+.landscape th {
+    background-color: #c5cbd2;
+    font-weight: bold;
+}
+.landscape th, .landscape td {
+    border: 1px solid #7482a8;
+    padding: 4px 8px;
+    border-spacing: 0;
+    text-align: left;
+}
+.landscape tr:hover {
+    cursor: pointer;
+    background-color: #e9f3f8;
+}
+
+
