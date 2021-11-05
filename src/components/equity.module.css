@@ -3,7 +3,7 @@
 }
 .content {
     width: 70%;
-    max-width: 400px;
+    max-width: 600px;
     display: inline-block;
     text-align: left;
 }
@@ -25,6 +25,7 @@
     margin: 0;
     padding: 0;
     color: #fff;
+    font-size: 1.2em;
 }
 
 .chevron-right::before, .chevron-bottom::before {

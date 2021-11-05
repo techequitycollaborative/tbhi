@@ -2,38 +2,109 @@
     color: #172f6e;
 }
 .landscape {
-    background-color: #f2f8fb;
+    background-color: #fde95d;
     height: 100%;
 }
 
 .header {
     display: block;
     text-align: center;
-    background-color: #e9f3f8;
+    background-color: #ff8144;
     padding-bottom: 20px;
+}
+.header h2 {
+    color: #fff;
+    margin: 0;
+    padding: 20px 0 0 0;
 }
 .header-content {
     max-width: 1200px;
     margin: auto;
 }
 
-.heading {
-    width: 14%;
-    padding: 40px 10px;
+.heading-wrapper {
+    width: 15%;
+    padding: 0;
     text-align: center;
-    border: 1px solid;
-    margin: 2% 1% 1% 1%;
+    margin: 1%;
     display: inline-block;
-    cursor: pointer;
+    vertical-align: top;
 }
 
+.heading {
+    cursor: pointer;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 2px 0;
+}
+.heading h3, .heading p {
+    color: #fff;
+    font-size: 1em;
+    padding-bottom: 0;
+}
+.heading h3 {
+    font-size: 1.2em;
+}
+.heading img {
+    width: 50px;
+}
+
+
 .heading:hover {
-    background-color: #b2bac3;
+    opacity: .6;
+}
+
+.active-heading {
+    background-color: #bf6133;
+    border: 4px solid #fff;
+    padding: 0;
+}
+.active-heading:hover {
+    opacity: 1;
+}
+
+
+.chevron-down::before {
+    border-style: solid;
+    border-width: 0.2em 0.2em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.75em;
+    position: relative;
+    top: 0.3em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.75em;
+    margin: 0;
+    color: #fff;
+}
+.chevron-down:before {
+    transform: rotate(135deg);
+}
+
+
+
+
+
+.ts {
+    background-image: url('../images/icon-ts.png');
+}
+.sl {
+    background-image: url('../images/icon-sl.png');
+}
+.cn {
+    background-image: url('../images/icon-cn.png');
+}
+.hb {
+    background-image: url('../images/icon-hb.png');
+}
+.hf {
+    background-image: url('../images/icon-hf.png'); 
 }
 
 .button {
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
     color: #333;
 }
 
@@ -42,7 +113,12 @@
 .landscape-content {
     padding-top: 40px;
 }
-
+.landscape-content h1 {
+    padding-bottom: 0;
+}
+.landscape-content p {
+    padding-top: 0;
+}
 
 .landscape table {
     width: 1000px;
@@ -50,7 +126,7 @@
     border-collapse: collapse;
 }
 .landscape th {
-    background-color: #c5cbd2;
+    background-color: #beaa28;
     font-weight: bold;
 }
 .landscape th, .landscape td {
@@ -60,8 +136,10 @@
     text-align: left;
 }
 .landscape tr:hover {
-    cursor: pointer;
     background-color: #e9f3f8;
+}
+.landscape td:hover {
+    cursor: pointer;
 }
 
 

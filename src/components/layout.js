@@ -14,24 +14,28 @@ const Layout = ({ pageTitle, children }) => {
     <div className={layoutStyles.container}>
       <div className={layoutStyles.panel}>
         <HeaderBackground>
+          <a href="https://techequitycollaborative.org"><div className={layoutStyles.logo}><StaticImage src="../images/logo.png" alt="Logo" /></div></a>
           <div className={layoutStyles.topContent}>
             <h1>Tech, Bias, and Housing Initiative</h1>
-            <h2>[TBD Project subtitle. TBD Project subtitle. TBD Project subtitle.]</h2>
+            <h2>[TBD Project subtitle. TBD Project subtitle.]</h2>
             <p>Project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description.</p>
             <p>Project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description project description.</p>
             <h3>Housing tech is predicted to be a $XX billion dollar business by XXXX.</h3>
           </div>
           <AnchorLink to="/#section2" title="section2" className={layoutStyles.downLink}>
-            <p><span>Explore the Company Landscape</span></p>
-            <div className={layoutStyles.right}><StaticImage src="../images/right.svg" alt="Down" /></div>
+            <p><span className={layoutStyles.buttonText}>Explore the Company Landscape</span><StaticImage src="../images/right.svg" alt="Down" /></p>
           </AnchorLink>
         </HeaderBackground>
       </div>
       <div className={layoutStyles.panel}>
         <a id="section2"></a>
         <Landscape></Landscape>
+        <AnchorLink to="/#section3" title="section3" className={layoutStyles.downLink + ' ' + layoutStyles.downLink2}>
+          <p><span>What's Next?</span></p>
+        </AnchorLink>
       </div>
       <div className={layoutStyles.panel}>
+        <a id="section3"></a>
         <FooterBackground>
           <div className={layoutStyles.bottomContent}>
             <h1>Equity Issues</h1>
@@ -41,7 +45,7 @@ const Layout = ({ pageTitle, children }) => {
           <div className={layoutStyles.footer}>
             <h1>Take Action</h1>
             <CTAs></CTAs>
-            <p>&copy;2021 TechEquity Collaborative. <a href="https://techequitycollaborative.org">About us.</a></p>
+            <p><strong><a href="https://techequitycollaborative.org/privacy-policy/">Privacy Policy</a> | <a href="https://techequitycollaborative.org/code-of-conduct/">Terms of Use</a></strong>&nbsp;&nbsp;&nbsp;<a href="tel:5102397472">Phone: (510) 239-7472‬</a> | <a href="mailto:info@techequitycollaborative.org">Email: info@techequitycollaborative.org</a>&nbsp;&nbsp;&nbsp;&copy;2021 TechEquity Collaborative. All Rights Reserved.</p>
           </div>
         </FooterBackground>
       </div>

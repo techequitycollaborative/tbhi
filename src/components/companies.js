@@ -31,9 +31,10 @@ class Companies extends Component{
                if (data.title == category) {
                   return <div>
                         <h1>{data.title}</h1>
+                        <p>Click a row for more details</p>
                         <table>
                            <tbody>
-                              <tr><th className={companyStyles.column1}>Name</th><th className={companyStyles.column2}>Type</th><th className={companyStyles.column3}>Capital Raised</th><th className={companyStyles.column4}>Backers</th></tr>
+                              <tr><th className={companyStyles.column1}>Company Name</th><th className={companyStyles.column2}>Software Type</th><th className={companyStyles.column3}>Capital Raised</th><th className={companyStyles.column4}>Backers</th></tr>
                               {data.companies.map((row, index) => {
                                  return <tr onClick={() => this.handleModalOpen(row.name)}><td>{row.name}</td><td>{row.type}</td><td>{row.capital}</td><td>{row.investors}</td></tr>
                               })}

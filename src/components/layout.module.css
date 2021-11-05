@@ -14,7 +14,7 @@ h1 {
   margin: 0px;
   color: #fff;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 3.6em;
   font-weight: 300;
 }
 
@@ -23,6 +23,7 @@ h2 {
   padding: 10px;
   margin: 0px;
   color: #fff;
+  font-size: 1.6em;
 }
 
 h3 {
@@ -37,6 +38,7 @@ p {
   padding: 10px;
   margin: 0;
   color: #fff;
+  font-size: 1.2em;
 }
 
 a {
@@ -44,6 +46,13 @@ a {
 }
 a:hover {
   color: #7482a8;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 100px;
 }
 
 .container {
@@ -60,62 +69,66 @@ a:hover {
 }
 
 .top-content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  max-width: 800px;
-  margin: auto;
+  float: right;
+  width: 50%;
+  margin-top: 8vh;
+  padding-right: 30px;
 }
 .top-content h1 {
   padding-bottom: 0;
+  font-size: 3em;
 }
 .top-content h2 {
   padding-top: 0;
-  text-align: left;
-  padding-left: 40px;
 }
 .top-content h3 {
   margin: 60px 0 0 0;
 }
 .top-content p {
-  text-align: left;
+  text-align: justify;
 }
 
 .down-link {
   position: absolute;
-  bottom: 20px;
-  width: 100%;
-  left: 0;
+  bottom: 30px;
+  width: 50%;
   text-decoration: none;
+  right: 30px;
 }
 .down-link p {
   display: inline-block;
+  margin: 0 20px 0 20px;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  background-color: #006ac3;
+  color: #fff;
 }
-.right {
-  display: inline-block;
-  background-color: #e9f3f8;
-  width: 25px;
-  height: 25px;
-  padding: 5px;
-  border-radius: 40px;
+.button-text {
+  padding-right: 10px;
 }
-.right img {
-  padding: 3px 0 0 0;
-  height: 80%;
-  width: 100%;
+.down-link img {
+  height: 1.25em;
 }
-.down-link:hover .right{
-  background-color: #66a6db;
+.down-link:hover {
+  opacity: .8;
 }
-.down-link:hover p {
-  color: #66a6db;
+
+.down-link-2 {
+  position: relative;
+  text-align: center;
+  right: 0px;
+  bottom: 70px;
+}
+.down-link-2 p {
+  background-color: #3388CF;
 }
 
 
 
 .bottom-content {
   position: relative;
-  top: 15%;
+  top: 10%;
   max-width: 800px;
   margin: auto;
 }
@@ -128,7 +141,17 @@ a:hover {
   bottom: 10px;
   width: 100%;
 }
-
+.footer p {
+  font-size: 1em;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  cursor: pointer;
+  color: #afb6ba;
+}
 
 
 
