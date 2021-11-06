@@ -76,7 +76,6 @@ a:hover {
 }
 .top-content h1 {
   padding-bottom: 0;
-  font-size: 3em;
 }
 .top-content h2 {
   padding-top: 0;
@@ -107,8 +106,9 @@ a:hover {
 .button-text {
   padding-right: 10px;
 }
-.down-link img {
+.down-link .image {
   height: 1.25em;
+  width: 1.6em;
 }
 .down-link:hover {
   opacity: .8;
@@ -121,16 +121,16 @@ a:hover {
   bottom: 70px;
 }
 .down-link-2 p {
-  background-color: #3388CF;
 }
 
 
 
 .bottom-content {
   position: relative;
-  top: 10%;
+  top: 5%;
   max-width: 800px;
   margin: auto;
+  padding-left: 200px;
 }
 .bottom-content p {
   text-align: left;
@@ -140,6 +140,7 @@ a:hover {
   position: absolute;
   bottom: 10px;
   width: 100%;
+  margin-left: 40px;
 }
 .footer p {
   font-size: 1em;

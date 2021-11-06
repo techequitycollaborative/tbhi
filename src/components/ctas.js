@@ -5,8 +5,9 @@ class CTAs extends Component{
    render(){
        return(
           <div className={ctaStyles.container}>
-            <button className={ctaStyles.button}>CTA 1</button>
-            <button className={ctaStyles.button}>CTA 2</button>
+            <button className={ctaStyles.button}>Subscribe</button>
+            <button className={ctaStyles.button}>Speak With Us</button>
+            <button className={ctaStyles.button}>Share your Experience</button>
           </div>
        )
    }

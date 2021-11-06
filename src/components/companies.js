@@ -30,8 +30,7 @@ class Companies extends Component{
             {JSONData.content.map((data, index) => {
                if (data.title == category) {
                   return <div>
-                        <h1>{data.title}</h1>
-                        <p>Click a row for more details</p>
+                        <h2>{data.title} (click row for more details)</h2>
                         <table>
                            <tbody>
                               <tr><th className={companyStyles.column1}>Company Name</th><th className={companyStyles.column2}>Software Type</th><th className={companyStyles.column3}>Capital Raised</th><th className={companyStyles.column4}>Backers</th></tr>

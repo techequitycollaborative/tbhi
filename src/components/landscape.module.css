@@ -2,7 +2,7 @@
     color: #172f6e;
 }
 .landscape {
-    background-color: #fde95d;
+    background-color: #f2f8fb;
     height: 100%;
 }
 
@@ -45,7 +45,7 @@
 .heading h3 {
     font-size: 1.2em;
 }
-.heading img {
+.heading-img {
     width: 50px;
 }
 
@@ -84,24 +84,6 @@
 
 
 
-
-
-.ts {
-    background-image: url('../images/icon-ts.png');
-}
-.sl {
-    background-image: url('../images/icon-sl.png');
-}
-.cn {
-    background-image: url('../images/icon-cn.png');
-}
-.hb {
-    background-image: url('../images/icon-hb.png');
-}
-.hf {
-    background-image: url('../images/icon-hf.png'); 
-}
-
 .button {
     margin: 0;
     padding: 20px 0;
@@ -112,6 +94,8 @@
 
 .landscape-content {
     padding-top: 40px;
+    max-width: 1000px;
+    margin: auto;
 }
 .landscape-content h1 {
     padding-bottom: 0;
@@ -126,7 +110,7 @@
     border-collapse: collapse;
 }
 .landscape th {
-    background-color: #beaa28;
+    background-color: #afb6ba;
     font-weight: bold;
 }
 .landscape th, .landscape td {
