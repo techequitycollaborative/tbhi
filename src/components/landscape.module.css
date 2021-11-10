@@ -1,9 +1,10 @@
 .landscape h1, .landscape h2, .landscape h3, .landscape p, .landscape th, .landscape td {
-    color: #172f6e;
+    color: #4F515A;
 }
 .landscape {
     background-color: #f2f8fb;
     height: 100%;
+    min-height: 100vh;
 }
 
 .header {
@@ -15,12 +16,20 @@
 .header h2 {
     color: #fff;
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 40px 0 10px 0;
+}
+p.description {
+    padding: 0;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+    color:  #fff;
 }
 .header-content {
     max-width: 1200px;
     margin: auto;
 }
+
 
 .heading-wrapper {
     width: 15%;
@@ -93,7 +102,7 @@
 
 
 .landscape-content {
-    padding-top: 40px;
+    padding: 40px 0;
     max-width: 1000px;
     margin: auto;
 }
@@ -110,14 +119,19 @@
     border-collapse: collapse;
 }
 .landscape th {
-    background-color: #afb6ba;
+    background-color: #a5a7ae;
     font-weight: bold;
+    color: #4f515a;
 }
 .landscape th, .landscape td {
-    border: 1px solid #7482a8;
-    padding: 4px 8px;
+    border: none;
+    padding: 8px;
     border-spacing: 0;
+    font-size: 1.1em;
     text-align: left;
+}
+.landscape td {
+    border-bottom: 1px solid #a5a7ae;  
 }
 .landscape tr:hover {
     background-color: #e9f3f8;

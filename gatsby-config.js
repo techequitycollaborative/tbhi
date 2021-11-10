@@ -16,6 +16,9 @@ module.exports = {
       options: {
         google: {
           families: ['Source Sans Pro:300,400,700']
+        },
+        typekit: {
+          id: 'aep4kyu'
         }
       }
     },

@@ -6,42 +6,42 @@
         {
           "name": "Naborly",
           "type": "Risk Assessment Report",
-          "url": "https://www.naborly.com/",
+          "url": "https://www.naborly.com",
           "capital": "$8.5 million",
           "investors": "Trinity, First Round Capital, Y Combinator",
-          "description": "Naborly’s screening service provides landlords in the U.S. and Canada with rental forms they send to potential tenants, who fill in their employment, financial, and rental history for verification. Naborly feeds roughly 500 data points across credit, criminal, and rental history records sourced from private data vendors, governments, and open source databases to a machine learning system — SHERLY — that generates a risk score between 400 and 900 (the higher the better) within 90 minutes. From within an online dashboard, landlords can provide feedback and endorsements for tenants, who can use their profile to apply to future rental.<br><br>NaborlyShield, in addition to applicant screening it handles the eviction process in the event a tenant refuses to pay or can’t cover the first month’s rent. Naborly works with insolvent tenants to offer loans, and it will cover up to six months’ rent if a guest leaves without providing notice and up to $2,000 in damages if that guest causes damage to the property.",
+          "description": "Naborly’s screening service provides landlords in the U.S. and Canada with rental forms they send to potential tenants, who fill in their employment, financial, and rental history for verification. Naborly feeds roughly 500 data points across credit, criminal, and rental history records sourced from private data vendors, governments, and open source databases to a machine learning system — SHERLY — that generates a risk score between 400 and 900 (the higher the better) within 90 minutes. From within an online dashboard, landlords can provide feedback and endorsements for tenants, who can use their profile to apply to future rentals.<br><br>NaborlyShield handles the eviction process in the event a tenant refuses to pay or can’t cover the first month’s rent. Naborly works with insolvent tenants to offer loans, and it will cover up to six months’ rent if a guest leaves without providing notice and up to $2,000 in damages if that guest causes damage to the property.",
           "target": "Landlords and property managers",
           "scale": "Serves more than 850,000 rental units across the U.S. and Canada"
         },
         {
           "name": "RentSpree",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Tenant Verification Package",
+          "url": "https://www.rentspree.com",
+          "capital": "$10.4 million",
+          "investors": "645 Ventures, TenOneTen Ventures",
+          "description": "Rentspree provides a universal tenant screening process, renter management, and rental screening API that enables any platform to incorporate an automated screening process in as little as one week. Each screening package includes a full online rental application, a TransUnion Smartmove report, a criminal background check, and a nationwide eviction report.",
+          "target": "Real estate agents, property managers, landlords",
+          "scale": "600,000 people use RentSpree"
         },
         {
           "name": "TurboTenant",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Property Management Platform with Tenant Screening",
+          "url": "https://www.turbotenant.com",
+          "capital": "$10.2 million",
+          "investors": "RET Ventures, Access Ventures, Crescendo Capital Partners, FrontRange Capital Partners",
+          "description": "TurboTenant partners with TransUnion, a credit agency, to search 370 million records, search 25 million eviction records and performs a soft inquiry as to not negatively affect the renter's credit score for the tenant screening process.",
+          "target": "Landlords and renters ",
+          "scale": "350,000+ independent landlords use Turbotenant"
         },
         {
           "name": "Avail",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Landlord/Tenant Relationship Management Platform",
+          "url": "https://www.avail.co",
+          "capital": "$9.7 million",
+          "investors": "Cultivation Capital, Bigfoot Capital, Nameless Ventures, Charmides Capital",
+          "description": "Landlords can select the tenant background report they want to receive, that includes TransUnion credit, criminal background, and eviction reports. Enter in the applicant's name and email, the tenant will authorize the report and verify their identity. A full tenant report will is sent to the landlord's account. Landlords then select a tenant and can use a state-specific lease template.",
+          "target": "Landlords and renters",
+          "scale": "More than 500,000 landlords and tenants across 14,000 zip codes across the United States"
         }
       ]
     },
@@ -50,59 +50,59 @@
       "companies": [
         {
           "name": "Divvy Homes",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Rent-to-Own Platform",
+          "url": "https://www.divvyhomes.com",
+          "capital": "$490 million",
+          "investors": "Andreessen Horowitz, Tiger Global Management, GIC, Moore Capital, Caffeinated Capital, GGV Capital",
+          "description": "Divvy offers a modern version of a rent-to-own program that allows home buyers to choose an eligible home that Divvy buys and rents to the client, who works on saving the money to eventually qualify for a mortgage. Offerings include financial counseling and  25% of the monthly rent payment going into a savings account to put toward the eventual downpayment. Clients also put 1% to 2% down to participate in the Divvy program.",
+          "target": "Homebuyers and real estate agents",
+          "scale": "More than 750,000 Americans have applied for Divvy's homeownership program since 2017"
         },
         {
           "name": "Flyhomes",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Home Buying Platform",
+          "url": "https://www.flyhomes.com",
+          "capital": "$310 million",
+          "investors": "Norwest Venture Partners and Battery Ventures. Fifth Wall, Camber Creek, Balyasny Asset Management, Zillow’s Spencer Rascoff and existing investors Andreessen Horowitz and Canvas Partners also participated in the round.",
+          "description": "Flyhomes converts traditional home offers into cash offers so a qualified buyer without cash on hand can compete and win against cash buyers. Their Trade Up program enables sellers to unlock equity from their current home in order to buy their new home.",
+          "target": "Home buyers and sellers",
+          "scale": "$2.6 billion in homes bought and sols"
         },
         {
           "name": "Knock",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Homeswap Buying Platform",
+          "url": "https://www.knock.com/home-swap",
+          "capital": "$434.5 million",
+          "investors": "Second Century Ventures, Foundry Group, Company Ventures, FJ Labs, Corazon Capital, RRE Ventures, Company Ventures, Great Oaks Venture Capital, Greycroft",
+          "description": "Through the Knock Home Swap program, potential homebuyers get pre-funded for a competitively priced mortgage to make a cash-equivalent offer on their dream home before even listing their old house.",
+          "target": "Homebuyers and real estate agents",
+          "scale": "In addition to the eight markets throughout Southern California, the Knock Home Swap is available through 120 real estate brokerage firms with nearly 70,000 agents. Knock plans to offer the Home Swap in 75 markets by 2023."
         },
         {
           "name": "Opendoor",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Home Buying and Selling Marketplace",
+          "url": "https://www.opendoor.com",
+          "capital": "$1.9 billion",
+          "investors": "BlackRock, GGV Capital, Norwest Venture Partners, Access Technology Ventures, Hawk Equity",
+          "description": "Opendoor makes a competitive cash offer to a home seller to put towards the value of a new home. Opendoor lists the seller's existing home on the market and markets it to get a great offer. Opendoor provides cash and competitive terms to help folks  buy a home and line up close dates to prevent paying double mortgage or moving twice.",
+          "target": "Home buyers and home sellers, real estate agents, vendors, builders",
+          "scale": "Opendoor has bought and sold, or just sold, more than 90,000 homes online since 2014"
         },
         {
           "name": "Homelight",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Home Buying Platform",
+          "url": "https://www.homelight.com",
+          "capital": "$627.5 million",
+          "investors": "Menlo Ventures, Zeev Ventures, STCAP, SoftBank Vision Fund, Credit Suisse, Crosslink Capital, Group 11",
+          "description": "HomeLight is the essential technology platform used by hundreds of thousands of homebuyers and sellers to partner with top real estate agents and win at any step of the real estate journey — whether that's finding a top agent, securing a competitive mortgage, or ensuring on-time, easy close.",
+          "target": "Homebuyers, home sellers, and real estate agents",
+          "scale": "More than 1 million customers"
         },
         {
           "name": "Aalto",
-          "type": "Homeowner marketplace",
+          "type": "Homeowner Marketplace",
           "url": "https://aalto.com",
-          "capital": "$17M",
+          "capital": "$17 million",
           "investors": "Defy VC, Bacground Capital, Maple VC, Sequoia Capital",
           "description": "Aalto is an online marketplace that is built for sellers and buyers, not real estate agents. We've built Aalto to remove all the traditional real estate friction, saving you time, stress and money. Unlike traditional brokerages, sellers can try Aalto without signing a contract as they build up a waitlist of buyers.",
           "target": "Homebuyers and home sellers",
@@ -115,29 +115,29 @@
       "companies": [
         {
           "name": "Tomo",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Digital Mortgage and Transaction",
+          "url": "http://hellotomo.com",
+          "capital": "$70 million",
+          "investors": "SVB Capital, DST Capital, Ribbit Capital, Zigg Capital, NFX",
+          "description": "Tomo Networks is a fintech startup that improves the homebuying experience by pairing a smarter and faster mortgage process with the best real estate agents to eliminate complexity, reduce cost, and put buyers in the best position to close.",
+          "target": "Mortgage applicant",
+          "scale": "Serving Seattle, Dallas, and Houston"
         },
         {
           "name": "Better",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Digital Mortgage, Title Insurance, and Homeowner's Insurance",
+          "url": "http://better.com",
+          "capital": "$905 million",
+          "investors": "Softbank Vision Fund, Ariane Capital, Raison Asset Management, Manhattan West Asset Management, Millennia Capital, 9Yards Capital, Activant Capital, American Express Ventures",
+          "description": "Better is an online mortgage lender that aims to offer lower-than-standard fees to consumers looking for credit to help them buy a house. Customers are able to upload and eSign documents and can leverage technology to complete every step of the mortgage process.",
+          "target": "Home buyers and homeowners looking to refinance",
+          "scale": "$545M worth of homes closed by Better's real estate agents in 2020"
         },
         {
           "name": "Roostify",
-          "type": "Mortgage lending API",
+          "type": "Mortgage Lending API",
           "url": "http://www.roostify.com",
-          "capital": "$65M",
+          "capital": "$65 million",
           "investors": "Mouro Capital, Colchis Capital Management, Point72 Ventures, JP Morgan Chase, Cota Capital, Stone Point Capital, TD Bank",
           "description": "Roostify Document Intelligence Service is a mortgage document processing service that streamlines underwriting operations through automated document classification, data extraction, and data validation.",
           "target": "Mortgage lenders",
@@ -150,53 +150,43 @@
       "companies": [
         {
           "name": "WorkerSense",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Wearable Construction Worker Tracking Devices",
+          "url": "https://workersense.com",
+          "capital": "Seed",
+          "investors": "N/A",
+          "description": "WorkerSense delivers full-project awareness, meaning project teams know who’s on site, where they are, and what they're doing. Features include real-time workforce composition reporting, informing you of on-site subcontractors, arrival times, and headcounts.",
+          "target": "General contractors, subcontractors, and tradespeople",
+          "scale": "Deployed at research construction site"
         },
         {
           "name": "Built Robotics",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Automated Construction Tool Management",
+          "url": "https://www.builtrobotics.com",
+          "capital": "$48 million",
+          "investors": "Building Ventures, Presidio Ventures, Founders Fund, Next 47, Valia Ventures, Lemnos VC",
+          "description": "Transforms equipment into autonomous robots for the $1 trillion earthmoving industry with AI guidance and assessment mechanisms.",
+          "target": "Heavy machinery operators, construction site engineers, general contractors",
+          "scale": "Built's fleet of robots has excavated 100,000 tons of material on projects such as wind farms, housing developments, and utility solar installations. In total, equipment upgraded by Built Robotics has operated for over 7,500 hours with a perfect safety record — equivalent to 350,000 miles of testing for self-driving cars."
         },
         {
           "name": "Adobu",
-          "type": "Accessory Dwelling Unit  Pre-fab designer and builder",
-          "url": "https://www.builtrobotics.com/",
+          "type": "ADU Pre-fab Designer and Builder",
+          "url": "https://www.abodu.com",
           "capital": "$23.5 million",
           "investors": "Initialized Capital, Norwest Venture Partners",
-          "description": "Abodu offers three housing models today: a studio, a one-bedroom, and a two-bedroom, with prices starting at $189,000, $199,000 and $259,000 respectively. Those prices include standard installation, foundations, and utilities, but exclude city permit fees. Additional, more premium options and finishes are available as well. Homeowners can buy the units online or visit the units in-person at the company’s showroom in Redwood City.",
-          "target": "Homeowners that want to build granny flas",
+          "description": "Abodu offers three housing models today: a studio, a one-bedroom, and a two-bedroom, with prices starting at $189,000, $199,000 and $259,000 respectively. Prices include standard installation, foundations, and utilities, but exclude city permit fees and premium feature upgrades.",
+          "target": "Homeowners that want to build granny flats",
           "scale": "Dozens of completed ADUs operating in the Bay Area, Los Angeles, and Seattle"
         },
         {
           "name": "Indus.ai",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
-        },
-        {
-          "name": "The Wild",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Construction Intelligence Software",
+          "url": "https://indus.ai",
+          "capital": "$11.7 million",
+          "investors": "Bootstrap Labs, Millennium Technology Value Partners, GroundBreak Ventures, Spero Ventures",
+          "description": "A construction analytics platform that uses video feeds from site cameras. Computer vision, data, and just-in-time actionable insights empower construction professionals to mitigate cost and schedule risks. Indus.ai's proprietary machine visualization neural network can recognize over 100 types of construction activities and equipment.",
+          "target": "General contractors, developers, and project managers",
+          "scale": "100,000,000+ square feet of work zone use"
         }
       ]
     },
@@ -204,34 +194,34 @@
       "title": "Shared Living",
       "companies": [
         {
-          "name": "Starcity",
-          "type": "Co-living platform",
-          "url": "https://www.starcity.com",
-          "capital": "$51.3M",
-          "investors": "Peak State Ventures, Reshape, Deciens Capital, Bullpen Capital, Pay it Forward VC, Y Combinator",
-          "description": "Starcity is a developer and operator with full-stack real estate development, design and management capabilities.<br><br>By expanding the communal areas and reducing the size of the units, Starcity is able to offer residents a discount of 20-30% on new apartments, which amounts to a monthly rent that ranges between $1,000 and $2,000. Another perk is Starcity’s app, which allows residents to connect with their neighbors — a hyperlocalized form of Nextdoor, if you will.",
+          "name": "Common Living",
+          "type": "Co-living Platform",
+          "url": "https://www.common.com",
+          "capital": "$113.4 million",
+          "investors": "Norwest Venture Partners, Hanaco Venture Capital, Kinnevik AB, 8VC, Company Ventures, Maveron",
+          "description": "Common Living is a residential brand and operator that designs, leases, and manages multifamily properties to appeal to today’s renters.<br><br>Connect by Common app empowers members to engage and coordinate plans with each other.",
           "target": "Renters in expensive cities",
           "scale": "1,500 units in operation "
         },
         {
           "name": "Bungalow",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Co-living Home Rental Services",
+          "url": "https://www.bungalow.com",
+          "capital": "$171 million",
+          "investors": "Atomic, Founders Fund, Coatue, Flucas Ventures, Nine Four Ventures, Khosla Ventures, Deer Park Road",
+          "description": "For some properties, Bungalow follows a WeWork-type model where it will sign a master lease with the homeowner and then add bedrooms to the property.<br><br>Bungalow furnishes the common areas, manages an app to connect residents and handles roommate screening and matching. In most properties, it also converts extra space, like home dens or dining rooms, into bedrooms, maximizing how many people can live in the space.",
+          "target": "Renters seeking a community to live in",
+          "scale": "Bungalow manages over 700 properties in ten cities. Over 3,200 people currently live in Bungalow’s homes."
         },
         {
           "name": "Nesterly",
-          "type": "",
-          "url": "",
-          "capital": "",
-          "investors": "",
-          "description": "",
-          "target": "",
-          "scale": ""
+          "type": "Intergenerational Home Sharing",
+          "url": "https://www.nesterly.com",
+          "capital": "Seed",
+          "investors": "N/A",
+          "description": "A local student and an empty nester can use Nesterly to design a rental agreement whereby the student pays below-market rate for a room and makes up the difference for helping around the house. Nesterly manages rent payments, tracks tasks, manages insurance, and provides conflict mediation.",
+          "target": "Empty nesters and individuals in need of low rent",
+          "scale": "8 homeshare pairs through an intergenerational pilot through the City of Boston"
         }
       ]
     }

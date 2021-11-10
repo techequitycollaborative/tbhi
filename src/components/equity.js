@@ -17,74 +17,61 @@ class EquityAccordion extends Component{
     }
 
     toggle = (value)=>{
-        this.setState({
-            accordionState: value
-        })
+        if (this.state.accordionState == value) {
+            this.setState({
+                accordionState: 'closed'
+            })
+        }
+        else {
+            this.setState({
+                accordionState: value
+            })
+        }
     }
 
 
   render() {
     return (
     <div className={equityStyles.container}>
-      <Accordion className={equityStyles.content}>
-        <AccordionItem>
+      <Accordion className={equityStyles.content} allowZeroExpanded="true">
+        <AccordionItem className={equityStyles.item}>
             <AccordionItemHeading className={equityStyles.heading} onClick={() => this.toggle('1')}>
                 <AccordionItemButton className={equityStyles.button}>
-                   <span className={this.state.accordionState == '1' ? equityStyles.chevronBottom : equityStyles.chevronRight}></span>Unfair tenant screening
+                   <span className={this.state.accordionState == '1' ? equityStyles.chevronBottom : equityStyles.chevronRight}></span>Inaccurate Background Checks
                 </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-                <p>Tenant screening includes background checks that may search outdated or inaccurate databases. In particular, criminal history records can show expunged convictions or unlawful arrests that did not lead to any charges. When landlords rely on assessments based on inaccurate information, prospective tenants can be barred from housing without their legal right to an Individualized Assessment.</p>
+                <p>Tenant screening includes background checks that may search outdated or <a target="_blank" title="Inaccurate Databases" href="https://themarkup.org/locked-out/2021/01/11/the-obscure-yet-powerful-tenant-screening-industry-is-finally-getting-some-scrutiny">inaccurate databases</a>. In particular, criminal history records can show expunged convictions or unlawful arrests that did not lead to any charges. Eviction records are notoriously inaccurate, which will undoubtedly come into play as the COVID eviction moratoria begin to lift. Landlords may unknowingly make a housing determination based on inaccurate information when they’re only shown the final outcome of an applicant’s third-party assessment, rather than the underlying reports. When this happens, prospective tenants can be barred from housing without justification or <a target="_blank" title="Legal Rights" href="https://www.dfeh.ca.gov/wp-content/uploads/sites/32/2020/04/FairHousingCriminalHistoryFAQ_ENG.pdf">their legal right</a> to an <a target="_blank" title="Individualized Assessment" href="https://www.hud.gov/sites/documents/HUD_OGCGUIDAPPFHASTANDCR.PDF">individualized assessment</a>.</p>
             </AccordionItemPanel>
         </AccordionItem>
-        <AccordionItem>
+        <AccordionItem className={equityStyles.item}>
             <AccordionItemHeading className={equityStyles.heading} onClick={() => this.toggle('2')}>
                 <AccordionItemButton className={equityStyles.button}>
-                   <span className={this.state.accordionState == '2' ? equityStyles.chevronBottom : equityStyles.chevronRight}></span>Predatory payment plan models
+                   <span className={this.state.accordionState == '2' ? equityStyles.chevronBottom : equityStyles.chevronRight}></span>Predatory Ownership Schemes
                 </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-                <p>Payment plan, rent-to-own or home swap home-buying models include fine print that can end up costing the homebuyer thousands more than traditional lending recipients pay for their homes. Home “owners” can be at risk of losing their homes if they miss one payment, and have few protections for defaulting on the loan. Do rent-to-own and other innovative homeownership replicate age-old contract-for-deed schemes that exploited Black families and barred them from wealth-building opportunities for generations?</p>
+                <p>Payment plan, rent-to-own, and home swap homebuying models have historically targeted low-income communities of color with home “ownership” programs that place all of the risk and almost none of the benefit of homeownership onto the borrower. Do rent-to-own and other payment plan homeownership companies put a shine on age-old <a target="_blank" title="Contract-for-deed" href="https://www.npr.org/local/309/2019/05/30/728122642/contract-buying-robbed-black-families-in-chicago-of-billions">contract-for-deed</a> schemes that conned homeowners of color out of wealth-building opportunities for generations? How might those contract terms, such as the potential for eviction based on one late payment, exacerbate housing instability for vulnerable people, historically and disproportionately people of color?</p>
             </AccordionItemPanel>
         </AccordionItem>
-        <AccordionItem>
+        <AccordionItem className={equityStyles.item}>
             <AccordionItemHeading className={equityStyles.heading} onClick={() => this.toggle('3')}>
                 <AccordionItemButton className={equityStyles.button}>
-                   <span className={this.state.accordionState == '3' ? equityStyles.chevronBottom : equityStyles.chevronRight}></span>Restricting listing privileges
+                   <span className={this.state.accordionState == '3' ? equityStyles.chevronBottom : equityStyles.chevronRight}></span>Exclusionary Listings
                 </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-                <p>Restricting listing privileges or ‘white glove’ services for homes valued under a certain price could result in racial steering and violations of the Fair Housing Act. iBuying and Multiple Listing Services (MLS) platforms consolidate intermediaries, products, and services. What are the equity implications of these platforms that have millions of users?</p>
+                <p>Companies like Redfin restrict listing privileges and white-glove services to owners with homes valued above a certain amount. Because of <a target="_blank" title="Racism in Home Appraisal" href="https://www.npr.org/2021/05/21/998536881/a-black-woman-says-she-had-to-hide-her-race-to-get-a-fair-home-appraisal">longstanding racism in the home appraisal process</a>, this practice can <a target="_blank" title="Limiting Access" href="https://www.jsonline.com/story/news/local/milwaukee/2020/10/29/milwaukee-cited-redfin-lawsuit-alleging-redlining-discrimination/6070558002/">unfairly limit access to tools for homeowners of color</a>, potentially violating the Fair Housing Act.</p>
             </AccordionItemPanel>
         </AccordionItem>
-        <AccordionItem>
+        <AccordionItem className={equityStyles.item}>
             <AccordionItemHeading className={equityStyles.heading} onClick={() => this.toggle('4')}>
                 <AccordionItemButton className={equityStyles.button}>
-                   <span className={this.state.accordionState == '4' ? equityStyles.chevronBottom : equityStyles.chevronRight}></span>Reinforcement of historical exclusionary lending
+                   <span className={this.state.accordionState == '4' ? equityStyles.chevronBottom : equityStyles.chevronRight}></span>Hard-Coding Exclusionary Lending
                 </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-                <p>Many years of exclusionary lending by banks contribute to the housing segregation and racial wealth inequity we see today. If current housing market data shaped by racist housing policies are used to train loan origination software, bias will be hard-coded into product deployment and decision-making processes.</p>
-            </AccordionItemPanel>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionItemHeading className={equityStyles.heading} onClick={() => this.toggle('5')}>
-                <AccordionItemButton className={equityStyles.button}>
-                   <span className={this.state.accordionState == '5' ? equityStyles.chevronBottom : equityStyles.chevronRight}></span>Onerous loan terms and interest rates
-                </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-                <p>Digital housing and loan products expand access to customers who have been discriminated against by traditional lending or financial institutions. While offering a pathway into homeownership is promising, these first-time homeowners may fall prey to onerous loan terms and higher interest rates. Could new home financing products worsen income inequality for those who cannot access traditional credit for those who have the least means to pay more?</p>
-            </AccordionItemPanel>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionItemHeading className={equityStyles.heading} onClick={() => this.toggle('6')}>
-                <AccordionItemButton className={equityStyles.button}>
-                   <span className={this.state.accordionState == '6' ? equityStyles.chevronBottom : equityStyles.chevronRight}></span>Shared living catering to single, high-income professionals
-                </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel>
-                <p>As shared living properties age and depreciate, they are not suitable for affordable housing because they are configured for niche renters: often single, higher-income professionals. From an accessibility standpoint, families and people with disabilities will be unable to inhabit shared living buildings as they are. Conversely, many currently affordable shared living spaces flout local zoning by converting single-family homes into multi-family housing and can conceal the management fees charged in rent.</p>
+                <p>Many years of <a target="_blank" title="Exclusionary Lending" href="https://www.theatlantic.com/business/archive/2014/05/the-racist-housing-policy-that-made-your-neighborhood/371439/">exclusionary lending</a> by banks contributed to the housing segregation and racial wealth inequities we see today. If existing housing market data shaped by <a target="_blank" title="Racist Housing Policies" href="https://www.nytimes.com/2020/09/18/business/digital-mortgages.html">racist housing policies</a> are used to train loan origination software, bias will be hard-coded in digital home financing products—the very products that promise to expand access to customers that traditional banks have discriminated against. This may cause first-time buyers to be targeted for <a target="_blank" title="Onerous Loan Terms" href="https://www.theatlantic.com/business/archive/2018/04/rent-to-own-redlining/557588/">onerous loan terms</a> and higher interest rates when navigating these pathways to homeownership. Bias in lending decisions will only exacerbate inequity for those who are not served by traditional financing, and could contribute to regressive homeownership costs.</p>
             </AccordionItemPanel>
         </AccordionItem>
       </Accordion>

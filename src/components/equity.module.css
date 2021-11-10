@@ -6,15 +6,29 @@
     display: inline-block;
     text-align: left;
     padding-left: 50px;
+    min-height: 24em;
+    margin-bottom: 0;
 }
 .content p {
     text-align: left;
-    padding: 0 0 20px 20px;
+    padding: 0 80px 0 20px;
+}
+.content a {
+    color: #172f6e;
+    text-decoration: none;
+}
+.content a:hover {
+    color: #45598b;
+}
+
+.item {
+    margin-bottom: 20px;
 }
 
 .heading {
     cursor: pointer;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+    font-size: 1.1m;
 }
 
 .heading:hover {
@@ -41,7 +55,7 @@
     transform: rotate(-45deg);
     vertical-align: top;
     width: 0.45em;
-    margin-right: 6px;
+    margin-right: 10px;
 }
 
 .chevron-right:before {
