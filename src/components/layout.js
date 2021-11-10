@@ -11,16 +11,19 @@ import EquityAccordion from '../components/equity.js'
 const Layout = ({ pageTitle, children }) => {
   return (
     <div className={layoutStyles.container}>
-      <div className={layoutStyles.panel}>
+      <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
         <a id="section1"></a>
         <HeaderBackground>
-          <a href="https://techequitycollaborative.org"><div className={layoutStyles.logo}><StaticImage src="../images/logo.png" alt="Logo" /></div></a>
-          <div className={layoutStyles.topContent}>
-            <h1>Tech, Bias, and Housing Initiative</h1>
-            <p>Whether you are trying to buy a home, apply for a rental property, or you’re looking for a roommate, there are an endless number of brand new companies and digital products offering to help you do just that. They promise speed, efficiency, and a modern approach to slow and sometimes exclusionary rental or homeownership processes.</p>
-            <p>These new companies are venture-backed and digitally-enabled—and they play an increasingly influential role in the economy. From new modes of housing construction to automated home buying, tech-enabled companies promise to scale to massive market share and reap higher valuations along the way.</p>
-            <p>As unprecedented capital investment flows into this space, venture-backed companies’ winner-take-all approach to growth has the potential to exacerbate inequality in the housing space. Under these conditions, startups’ disruption mindset creates a risky landscape that could—without ethical frameworks and processes to ensure equitable outcomes—dramatically accelerate racial and economic inequities.</p>
-            <p>The Tech, Bias, and Housing Initiative examines these potential harms and biases through comprehensive research, corporate practice, and public policy advocacy.</p>
+          <div className={layoutStyles.topContentWrapper}>
+            <a href="https://techequitycollaborative.org"><div className={layoutStyles.logo}><StaticImage src="../images/logo.png" alt="Logo" /></div></a>
+            <div className={layoutStyles.topContent}>
+              <h1>Tech, Bias, and Housing Initiative</h1>
+              <p>Whether you are trying to buy a home, apply for a rental property, or you’re looking for a roommate, there are an endless number of brand new companies and digital products offering to help you do just that. They promise speed, efficiency, and a modern approach to slow and sometimes exclusionary rental or homeownership processes.</p>
+              <p>These new companies are venture-backed and digitally-enabled—and they play an increasingly influential role in the economy. From new modes of housing construction to automated home buying, tech-enabled companies promise to scale to massive market share and reap higher valuations along the way.</p>
+              <p>As unprecedented capital investment flows into this space, venture-backed companies’ winner-take-all approach to growth has the potential to exacerbate inequality in the housing space. Under these conditions, startups’ disruption mindset creates a risky landscape that could—without ethical frameworks and processes to ensure equitable outcomes—dramatically accelerate racial and economic inequities.</p>
+              <p>The Tech, Bias, and Housing Initiative examines these potential harms and biases through comprehensive research, corporate practice, and public policy advocacy.</p>
+            </div>
+            <div className={layoutStyles.clearFix}></div>
           </div>
 
           <div className={layoutStyles.navWrapper}>
@@ -72,22 +75,27 @@ const Layout = ({ pageTitle, children }) => {
           </AnchorLink>
         </div>
       </div>
-      <div className={layoutStyles.panel}>
+      <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
         <a id="section4"></a>
-        <FooterBackground>
-          <div className={layoutStyles.bottomContent}>
-            <h2>Potential Harms</h2>
-            <p>Our initial landscape assessment revealed harms that these tools and business models could potentially exacerbate—ultimately perpetuating bias and inequity in housing. Over the next year, we will explore these issues in depth in our working papers.</p>
-            <EquityAccordion></EquityAccordion>
-            <div>
-              <p>Sign up for updates on our Tech, Bias, and Housing research, educational events, and opportunities to get involved.</p>
-              <a href="https://techequitycollaborative.org/join-the-movement/"><button className={layoutStyles.signupButton}>Sign Up</button></a>
+        <div className={layoutStyles.bottomContentWrapper}>
+          <FooterBackground>
+            <div className={layoutStyles.bottomContent}>
+              <h2>Potential Harms</h2>
+              <p>Our initial landscape assessment revealed harms that these tools and business models could potentially exacerbate—ultimately perpetuating bias and inequity in housing. Over the next year, we will explore these issues in depth in our working papers.</p>
+              <EquityAccordion></EquityAccordion>
+              <div className={layoutStyles.signupSection}>
+                <p>Sign up for updates on our Tech, Bias, and Housing research, educational events, and opportunities to get involved.</p>
+                <a href="https://techequitycollaborative.org/stay-in-the-loop-with-tech-bias-and-housing/"><button className={layoutStyles.signupButton}>Sign Up</button></a>
+              </div>
             </div>
-          </div>
-          <div className={layoutStyles.footer}>
-            <p><strong><a href="https://techequitycollaborative.org/privacy-policy/">Privacy Policy</a> | <a href="https://techequitycollaborative.org/code-of-conduct/">Terms of Use</a></strong>&nbsp;&nbsp;&nbsp;<a href="tel:5102397472">Phone: (510) 239-7472‬</a> | <a href="mailto:info@techequitycollaborative.org">Email: info@techequitycollaborative.org</a>&nbsp;&nbsp;&nbsp;&copy; 2021 <strong><a href="https://techequitycollaborative.org">TechEquity Collaborative</a></strong>. All Rights Reserved.</p>
-          </div>
-        </FooterBackground>
+            <div className={layoutStyles.clearFix}></div>
+            <div className={layoutStyles.clearFix}></div>
+            <div className={layoutStyles.clearFix}></div>
+            <div className={layoutStyles.footer}>
+              <p><strong><a href="https://techequitycollaborative.org/privacy-policy/">Privacy Policy</a> | <a href="https://techequitycollaborative.org/code-of-conduct/">Terms of Use</a></strong>&nbsp;&nbsp;&nbsp;<a href="tel:5102397472">Phone: (510) 239-7472‬</a> | <a href="mailto:info@techequitycollaborative.org">Email: info@techequitycollaborative.org</a>&nbsp;&nbsp;&nbsp;&copy; 2021 <strong><a href="https://techequitycollaborative.org">TechEquity Collaborative</a></strong>. All Rights Reserved.</p>
+            </div>
+          </FooterBackground>
+        </div>
 
         <div className={layoutStyles.navWrapper}>
           <AnchorLink to="/#section3" title="Up" className={layoutStyles.downLink}>

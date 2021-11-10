@@ -28,7 +28,6 @@
 .heading {
     cursor: pointer;
     margin-bottom: 4px;
-    font-size: 1.1m;
 }
 
 .heading:hover {
@@ -66,4 +65,28 @@
 .chevron-bottom:before {
     top: .3em;
     transform: rotate(135deg);
+}
+
+
+
+
+
+
+
+/*RESPONSIVE STYLES*/
+@media screen and (max-width: 480px) {
+    .content {
+        min-height: 0;
+        padding-left: 10px;
+    }
+    .content p {
+        text-align: left;
+        padding: 0 20px 0 20px;
+    }
+    .button {
+        font-size: .9em;
+    }
+    .chevron-right::before {
+        top: .4em;
+    }
 }

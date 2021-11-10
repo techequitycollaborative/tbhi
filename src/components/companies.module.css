@@ -62,3 +62,42 @@
 .column4 {
     width: 40%;
 }
+
+
+
+
+
+
+
+
+/*RESPONSIVE STYLES*/
+@media screen and (max-width: 1024px) {
+    .column4 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .table-title {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .table-subtitle {
+        display: block;
+        padding: 0 0 4px 0;
+        margin: 0;
+        font-size: .8em;
+    }
+    .column4 {
+        display: none;
+    }
+
+
+    .companies td {
+        min-width: 0;
+        vertical-align: top;
+        font-size: .75em;
+    }
+}

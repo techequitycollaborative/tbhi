@@ -38,6 +38,7 @@ const FooterBackground = styled(FooterBackgroundSection)`
   background-repeat: repeat-y;
   background-size: cover;
   height: 100%;
+  min-height: 100vh;
 `
 
 export default FooterBackground

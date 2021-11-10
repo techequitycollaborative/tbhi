@@ -35,7 +35,7 @@ class Companies extends Component{
                            <tbody>
                               <tr><th className={companyStyles.column1}>Company Name</th><th className={companyStyles.column2}>Software Type</th><th className={companyStyles.column3}>Capital Raised</th><th className={companyStyles.column4}>Key Investors</th></tr>
                               {data.companies.map((row, index) => {
-                                 return <tr onClick={() => this.handleModalOpen(row.name)}><td>{row.name}</td><td>{row.type}</td><td>{row.capital}</td><td>{row.investors}</td></tr>
+                                 return <tr onClick={() => this.handleModalOpen(row.name)}><td>{row.name}</td><td>{row.type}</td><td>{row.capital}</td><td className={companyStyles.column4}>{row.investors}</td></tr>
                               })}
                            </tbody>
                         </table>
@@ -43,7 +43,7 @@ class Companies extends Component{
                            return <ReactModal
                                 isOpen={this.state.modalState == row.name}
                                 onRequestClose={this.handleModalClose}
-                                contentLabel="Example Modal In Gatsby"
+                                contentLabel="Company Info"
                               >
                                  <button className={companyStyles.closeButton} onClick={this.handleModalClose}><StaticImage src="../images/close.png" alt="Close" /></button>
                                  <div className={companyStyles.companies}>

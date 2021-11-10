@@ -141,3 +141,107 @@ p.description {
 }
 
 
+
+
+
+
+
+
+/*RESPONSIVE STYLES*/
+@media screen and (max-width: 1280px) {
+    .heading-img {
+        width: 30px;
+    }
+    .heading {
+        min-height: 12em;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .landscape table {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .heading-img {
+        width: 20px;
+    }
+    .heading {
+        min-height: 10em;
+    }
+    .heading h3 {
+        font-size: 1em;
+        padding-top: 0;
+    }
+    .heading p {
+        font-size: .8em;
+        padding-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .heading-img {
+        width: 20px;
+    }
+    .heading-wrapper {
+        display: inline-block;
+        width: 30%;
+    }
+    .heading {
+        min-height: 7.3em;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .heading-wrapper {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        display: block;
+        vertical-align: top;
+    }
+    .chevron-down {
+        display: none;
+    }
+    .heading-img {
+        display: none;
+    }
+    .heading {
+        cursor: pointer;
+        color: #fff;
+        padding: 0;
+        width: 80%;
+        margin: auto;
+        min-height: 0;
+    }
+    .active-heading {
+        border: 2px solid #fff;
+    }
+    .heading h3 {
+        color: #fff;
+        font-size: .9em;
+        padding: 0;
+        margin-top: 0;
+    }
+    .heading p {
+        display: none;
+    }
+    .button {
+        padding: 0;
+    }
+
+    .landscape table {
+        width: 90%;
+        margin: auto;
+    }
+    .landscape th, .landscape td {
+        padding: 4px;
+        font-size: .8em;
+    }
+}
