@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Helmet } from "react-helmet"
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import * as layoutStyles from './layout.module.css'
@@ -11,11 +12,23 @@ import EquityAccordion from '../components/equity.js'
 const Layout = ({ pageTitle, children }) => {
   return (
     <div className={layoutStyles.container}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Tech, Bias, and Housing Initiative</title>
+        <link rel="canonical" href="https://housing.techbias.org/" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://techequitycollaborative.org/wp-content/themes/radicati/dist/images/favicons/favicon-32x32.png" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103596359-3"></script>
+        <script type="application/ld+json">{`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('config', 'UA-103596359-3');
+        `}</script>
+      </Helmet>
       <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
         <a id="section1"></a>
         <HeaderBackground>
           <div className={layoutStyles.topContentWrapper}>
-            <a href="https://techequitycollaborative.org"><div className={layoutStyles.logo}><StaticImage src="../images/logo.png" alt="Logo" /></div></a>
+            <a target="_blank" href="https://techequitycollaborative.org"><div className={layoutStyles.logo}><StaticImage src="../images/logo.png" alt="Logo" /></div></a>
             <div className={layoutStyles.topContent}>
               <h1>Tech, Bias, and Housing Initiative</h1>
               <p>Whether you are trying to buy a home, apply for a rental property, or you’re looking for a roommate, there are an endless number of brand new companies and digital products offering to help you do just that. They promise speed, efficiency, and a modern approach to slow and sometimes exclusionary rental or homeownership processes.</p>
@@ -85,14 +98,14 @@ const Layout = ({ pageTitle, children }) => {
               <EquityAccordion></EquityAccordion>
               <div className={layoutStyles.signupSection}>
                 <p>Sign up for updates on our Tech, Bias, and Housing research, educational events, and opportunities to get involved.</p>
-                <a href="https://techequitycollaborative.org/stay-in-the-loop-with-tech-bias-and-housing/"><button className={layoutStyles.signupButton}>Sign Up</button></a>
+                <a target="_blank" href="https://techequitycollaborative.org/stay-in-the-loop-with-tech-bias-and-housing/"><button className={layoutStyles.signupButton}>Sign Up</button></a>
               </div>
             </div>
             <div className={layoutStyles.clearFix}></div>
             <div className={layoutStyles.clearFix}></div>
             <div className={layoutStyles.clearFix}></div>
             <div className={layoutStyles.footer}>
-              <p><strong><a href="https://techequitycollaborative.org/privacy-policy/">Privacy Policy</a> | <a href="https://techequitycollaborative.org/code-of-conduct/">Terms of Use</a></strong>&nbsp;&nbsp;&nbsp;<a href="tel:5102397472">Phone: (510) 239-7472‬</a> | <a href="mailto:info@techequitycollaborative.org">Email: info@techequitycollaborative.org</a>&nbsp;&nbsp;&nbsp;&copy; 2021 <strong><a href="https://techequitycollaborative.org">TechEquity Collaborative</a></strong>. All Rights Reserved.</p>
+              <p><strong><a target="_blank" href="https://techequitycollaborative.org/privacy-policy/">Privacy Policy</a> | <a target="_blank" href="https://techequitycollaborative.org/code-of-conduct/">Terms of Use</a></strong>&nbsp;&nbsp;&nbsp;<a href="tel:5102397472">Phone: (510) 239-7472‬</a> | <a href="mailto:info@techequitycollaborative.org">Email: info@techequitycollaborative.org</a>&nbsp;&nbsp;&nbsp;&copy; 2021 <strong><a target="_blank" href="https://techequitycollaborative.org">TechEquity Collaborative</a></strong>. All Rights Reserved.</p>
             </div>
           </FooterBackground>
         </div>

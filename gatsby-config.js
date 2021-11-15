@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "tbhi",
+    siteUrl: "https://housing.techbias.org",
+    title: "TBHI",
   },
   plugins: [
     {
@@ -35,6 +35,7 @@ module.exports = {
     "styled-components",
     "react-accessible-accordion",
     "gatsby-plugin-modal-routing-3",
-    "gatsby-plugin-image"
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet"
   ],
 };

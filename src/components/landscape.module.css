@@ -209,7 +209,7 @@ p.description {
     .chevron-down {
         display: none;
     }
-    .heading-img {
+    .heading-img-wrapper {
         display: none;
     }
     .heading {
