@@ -147,16 +147,47 @@ a:hover {
 .bottom-content-wrapper {
   min-height: 100vh;
   height: 100%;
+  background-color: #4f515a;
 }
 .bottom-content {
-  float: right;
-  padding: 3% 5% 0 0;
+  padding: 40px 0;
   max-width: 900px;
   margin: auto;
   text-align: left;
 }
-.bottom-content h2, .bottom-content p {
+.bottom-content h3 {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.bottom-content h3, .bottom-content p {
   text-align: left;
+}
+.bottom-content a {
+  color: #e9f3f8;
+}
+.bottom-content a:hover {
+  color: #66a6db;
+}
+.harms-icon, .harms-icon-lg {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  transform: translate(-100%, 0);
+}
+.harms-icon-lg {
+  width: 2.4em;
+  transform: translate(-100%, 15%);
+}
+
+.footer-content h2, .footer-content p {
+  color: #4f515a;
+  text-align: center;
+  padding-top: 0;
+}
+.signup-section {
+  padding-top: 40px;
+  max-width: 500px;
+  margin: auto;
 }
 .signup-button {
     width: 200px;
@@ -174,17 +205,17 @@ a:hover {
 }
 .signup-button:hover {
     background-color: transparent;
+    color: #ff8144;
 }
 .footer {
-  position: absolute;
-  bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 4px;
   width: 100%;
 }
 .footer p {
   font-size: 1em;
 }
 .footer a {
-  color: #fff;
   text-decoration: none;
 }
 .footer a:hover {
@@ -192,43 +223,6 @@ a:hover {
   color: #afb6ba;
 }
 
-
-
-
-
-/*NAV BUTTONS*/
-.nav-wrapper {
-  position: absolute;
-  bottom: 12px;
-  right: 15px;
-}
-.chevron-wrapper {
-  background-color: #006ac3;
-  padding: 9px;
-  border-radius: 20px;
-  margin-bottom: 8px;
-}
-.chevron-wrapper:hover {
-  opacity: .7;
-}
-.chevron-down::before, .chevron-up::before {
-    border-style: solid;
-    border-width: 0.15em 0.15em 0 0;
-    content: '';
-    display: block;
-    height: 0.75em;
-    position: relative;
-    top: 0.2em;
-    transform: rotate(-45deg);
-    vertical-align: top;
-    width: 0.75em;
-    margin: 0;
-    color: #fff;
-}
-.chevron-down:before {
-    top: -0.15em;
-    transform: rotate(135deg);
-}
 
 
 
@@ -319,8 +313,20 @@ a:hover {
   .bottom-content h2 {
     text-align: center;
   }
+  .bottom-content h3 {
+    font-size: 1.2em;
+  }
   .bottom-content {
-    padding-bottom: 2em;
+    padding-bottom: 3em;
+  }
+  .harms-icon, .harms-icon-lg {
+    width: 1.6em;
+    position: absolute;
+    transform: translate(-100%, 20%);
+  }
+  .harms-icon-lg {
+    width: 1.2em;
+    transform: translate(-100%, 30%);
   }
 }
 
@@ -352,9 +358,6 @@ a:hover {
   }
   p {
     font-size: .8em;
-  }
-  .nav-wrapper {
-    display: none;
   }
   .flex-panel {
     min-height: 0;
@@ -408,10 +411,6 @@ a:hover {
       color: #fff;
       text-transform: uppercase;
       font-weight: bold;
-  }
-  .bottom-content {
-    float: none;
-    padding: 0;
   }
 }
 

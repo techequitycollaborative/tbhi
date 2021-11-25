@@ -36,6 +36,7 @@ module.exports = {
     "react-accessible-accordion",
     "gatsby-plugin-modal-routing-3",
     "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet"
+    "gatsby-plugin-react-helmet",
+    "react-slick"
   ],
 };

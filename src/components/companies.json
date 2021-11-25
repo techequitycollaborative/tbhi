@@ -2,6 +2,7 @@
   "content": [
     {
       "title": "Tenant Screening",
+      "description": "Landlords are taking leasing and property management online, relying on automated background checks when selecting renters. Companies use algorithms that score potential renters based on data inputs that are often obscured to both renters and landlords.",
       "companies": [
         {
           "name": "Naborly",
@@ -47,6 +48,7 @@
     },
     {
       "title": "Homebuying",
+      "description": "There are a number of uses for homebuying products. So-called “iBuyers” use algorithms to make offers on homes that they then flip. Realty websites shorten the duration of homebuying through virtual listings and reduce the number of steps within the process, often automating the role of the real estate agent. An emerging subset of companies are expanding access to homeownership by offering alternative homebuying models, such as rent-to-own or advance cash offers.",
       "companies": [
         {
           "name": "Divvy Homes",
@@ -66,7 +68,7 @@
           "investors": "Norwest Venture Partners and Battery Ventures. Fifth Wall, Camber Creek, Balyasny Asset Management, Zillow’s Spencer Rascoff and existing investors Andreessen Horowitz and Canvas Partners also participated in the round.",
           "description": "Flyhomes converts traditional home offers into cash offers so a qualified buyer without cash on hand can compete and win against cash buyers. Their Trade Up program enables sellers to unlock equity from their current home in order to buy their new home.",
           "target": "Home buyers and sellers",
-          "scale": "$2.6 billion in homes bought and sols"
+          "scale": "$2.6 billion in homes bought and sold"
         },
         {
           "name": "Knock",
@@ -112,6 +114,7 @@
     },
     {
       "title": "Home Financing",
+      "description": "The ecosystem of mortgage brokers and lenders, appraisal and inspection, and title and insurance companies are being digitized, automated, and even replaced by non-traditional players like alternative credit lenders. Buying, maintaining, and selling a home increasingly relies on data and digital interfaces and less on direct connection with human intermediaries. Companies rely on algorithms to assess creditworthiness, approve loans, execute financial transactions, and automate documentation.",
       "companies": [
         {
           "name": "Tomo",
@@ -147,6 +150,7 @@
     },
     {
       "title": "Construction",
+      "description": "The construction industry relies on the coordination of stakeholder communication and collaboration as they navigate regulatory and permitting processes. These stakeholders are utilizing digital tools, computer vision, and automated decision-making to streamline communication, permitting, and project planning across organizations and job functions. These tools and platforms advertise features like “enhancing worker safety and field productivity”, reducing design, engineering, and building costs, and improving project management capability.",
       "companies": [
         {
           "name": "WorkerSense",
@@ -192,6 +196,7 @@
     },
     {
       "title": "Shared Living",
+      "description": "The act of finding roommates for communal living has become a digital service and product. Companies develop or acquire residential property, match roommates, offer community events, and furnish living spaces to provide more affordable, social living arrangements. Shared living spaces typically have private bedrooms but share common spaces like kitchens, living rooms, and bathrooms.",
       "companies": [
         {
           "name": "Common Living",

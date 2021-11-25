@@ -4,10 +4,8 @@ import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import * as layoutStyles from './layout.module.css'
 import HeaderBackground from '../components/header-background'
-import FooterBackground from '../components/footer-background'
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Landscape from '../components/landscape.js'
-import EquityAccordion from '../components/equity.js'
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -38,12 +36,6 @@ const Layout = ({ pageTitle, children }) => {
             </div>
             <div className={layoutStyles.clearFix}></div>
           </div>
-
-          <div className={layoutStyles.navWrapper}>
-            <AnchorLink to="/#section2" title="Down" className={layoutStyles.downLink}>
-              <div className={layoutStyles.chevronWrapper}><span className={layoutStyles.chevronDown}></span></div>
-            </AnchorLink>
-          </div>
         </HeaderBackground>
       </div>
       <div className={layoutStyles.panel + ' ' + layoutStyles.smallPanel}>
@@ -66,54 +58,50 @@ const Layout = ({ pageTitle, children }) => {
             </div>
           </div>
         </div>
-        <div className={layoutStyles.navWrapper}>
-          <AnchorLink to="/#section1" title="Up" className={layoutStyles.downLink}>
-            <div className={layoutStyles.chevronWrapper}><span className={layoutStyles.chevronUp}></span></div>
-          </AnchorLink>
-          <AnchorLink to="/#section3" title="Down" className={layoutStyles.downLink}>
-            <div className={layoutStyles.chevronWrapper}><span className={layoutStyles.chevronDown}></span></div>
-          </AnchorLink>
-        </div>
       </div>
       <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
         <a id="section3"></a>
         <Landscape></Landscape>
-
-        <div className={layoutStyles.navWrapper}>
-          <AnchorLink to="/#section2" title="Up" className={layoutStyles.downLink}>
-            <div className={layoutStyles.chevronWrapper}><span className={layoutStyles.chevronUp}></span></div>
-          </AnchorLink>
-          <AnchorLink to="/#section4" title="Down" className={layoutStyles.downLink}>
-            <div className={layoutStyles.chevronWrapper}><span className={layoutStyles.chevronDown}></span></div>
-          </AnchorLink>
-        </div>
       </div>
       <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
         <a id="section4"></a>
         <div className={layoutStyles.bottomContentWrapper}>
-          <FooterBackground>
-            <div className={layoutStyles.bottomContent}>
-              <h2>Potential Harms</h2>
-              <p>Our initial landscape assessment revealed harms that these tools and business models could potentially exacerbate—ultimately perpetuating bias and inequity in housing. Over the next year, we will explore these issues in depth in our working papers.</p>
-              <EquityAccordion></EquityAccordion>
-              <div className={layoutStyles.signupSection}>
-                <p>Sign up for updates on our Tech, Bias, and Housing research, educational events, and opportunities to get involved.</p>
-                <a target="_blank" href="https://techequitycollaborative.org/stay-in-the-loop-with-tech-bias-and-housing/"><button className={layoutStyles.signupButton}>Sign Up</button></a>
-              </div>
+          <div className={layoutStyles.bottomContent}>
+            <h2>Potential Harms</h2>
+            <p>Our initial landscape assessment revealed harms that these tools and business models could potentially exacerbate—ultimately perpetuating bias and inequity in housing. Over the next year, we will explore these issues in depth in our working papers.</p>
+            <div className={layoutStyles.harmsItem}>
+              <div className={layoutStyles.harmsIconLg}><StaticImage src="../images/harms1.png" alt="Exclusionary Listings" /></div>
+              <h3>Inaccurate Background Checks</h3>
+              <p>Tenant screening includes background checks that may search outdated or <a target="_blank" title="Inaccurate Databases" href="https://themarkup.org/locked-out/2021/01/11/the-obscure-yet-powerful-tenant-screening-industry-is-finally-getting-some-scrutiny">inaccurate databases</a>. In particular, criminal history records can show expunged convictions or unlawful arrests that did not lead to any charges. Eviction records are notoriously inaccurate, which will undoubtedly come into play as the COVID eviction moratoria begin to lift. Landlords may unknowingly make a housing determination based on inaccurate information when they’re only shown the final outcome of an applicant’s third-party assessment, rather than the underlying reports. When this happens, prospective tenants can be barred from housing without justification or <a target="_blank" title="Legal Rights" href="https://www.dfeh.ca.gov/wp-content/uploads/sites/32/2020/04/FairHousingCriminalHistoryFAQ_ENG.pdf">their legal right</a> to an <a target="_blank" title="Individualized Assessment" href="https://www.hud.gov/sites/documents/HUD_OGCGUIDAPPFHASTANDCR.PDF">individualized assessment</a>.</p>
             </div>
-            <div className={layoutStyles.clearFix}></div>
-            <div className={layoutStyles.clearFix}></div>
-            <div className={layoutStyles.clearFix}></div>
-            <div className={layoutStyles.footer}>
-              <p><strong><a target="_blank" href="https://techequitycollaborative.org/privacy-policy/">Privacy Policy</a> | <a target="_blank" href="https://techequitycollaborative.org/code-of-conduct/">Terms of Use</a></strong>&nbsp;&nbsp;&nbsp;<a href="tel:5102397472">Phone: (510) 239-7472‬</a> | <a href="mailto:info@techequitycollaborative.org">Email: info@techequitycollaborative.org</a>&nbsp;&nbsp;&nbsp;&copy; 2021 <strong><a target="_blank" href="https://techequitycollaborative.org">TechEquity Collaborative</a></strong>. All Rights Reserved.</p>
+            <div className={layoutStyles.harmsItem}>
+              <div className={layoutStyles.harmsIcon}><StaticImage src="../images/harms2.png" alt="Exclusionary Listings" /></div>
+              <h3>Predatory Ownership Schemes</h3>
+              <p>Payment plan, rent-to-own, and home swap homebuying models have historically targeted low-income communities of color with home “ownership” programs that place all of the risk and almost none of the benefit of homeownership onto the borrower. Do rent-to-own and other payment plan homeownership companies put a shine on age-old <a target="_blank" title="Contract-for-deed" href="https://www.npr.org/local/309/2019/05/30/728122642/contract-buying-robbed-black-families-in-chicago-of-billions">contract-for-deed</a> schemes that conned homeowners of color out of wealth-building opportunities for generations? How might those contract terms, such as the potential for eviction based on one late payment, exacerbate housing instability for vulnerable people, historically and disproportionately people of color?</p>
             </div>
-          </FooterBackground>
+            <div className={layoutStyles.harmsItem}>
+              <div className={layoutStyles.harmsIcon}><StaticImage src="../images/harms3.png" alt="Exclusionary Listings" /></div>
+              <h3>Exclusionary Listings</h3>
+              <p>Companies like Redfin restrict listing privileges and white-glove services to owners with homes valued above a certain amount. Because of <a target="_blank" title="Racism in Home Appraisal" href="https://www.npr.org/2021/05/21/998536881/a-black-woman-says-she-had-to-hide-her-race-to-get-a-fair-home-appraisal">longstanding racism in the home appraisal process</a>, this practice can <a target="_blank" title="Limiting Access" href="https://www.jsonline.com/story/news/local/milwaukee/2020/10/29/milwaukee-cited-redfin-lawsuit-alleging-redlining-discrimination/6070558002/">unfairly limit access to tools for homeowners of color</a>, potentially violating the Fair Housing Act.</p>
+            </div>
+            <div className={layoutStyles.harmsItem}>
+              <div className={layoutStyles.harmsIconLg}><StaticImage src="../images/harms4.png" alt="Exclusionary Listings" /></div>
+              <h3>Hard-Coding Exclusionary Lending</h3>
+              <p>Many years of <a target="_blank" title="Exclusionary Lending" href="https://www.theatlantic.com/business/archive/2014/05/the-racist-housing-policy-that-made-your-neighborhood/371439/">exclusionary lending</a> by banks contributed to the housing segregation and racial wealth inequities we see today. If existing housing market data shaped by <a target="_blank" title="Racist Housing Policies" href="https://www.nytimes.com/2020/09/18/business/digital-mortgages.html">racist housing policies</a> are used to train loan origination software, bias will be hard-coded in digital home financing products—the very products that promise to expand access to customers that traditional banks have discriminated against. This may cause first-time buyers to be targeted for <a target="_blank" title="Onerous Loan Terms" href="https://www.theatlantic.com/business/archive/2018/04/rent-to-own-redlining/557588/">onerous loan terms</a> and higher interest rates when navigating these pathways to homeownership. Bias in lending decisions will only exacerbate inequity for those who are not served by traditional financing, and could contribute to regressive homeownership costs.</p>
+            </div>
+          </div>
         </div>
-
-        <div className={layoutStyles.navWrapper}>
-          <AnchorLink to="/#section3" title="Up" className={layoutStyles.downLink}>
-            <div className={layoutStyles.chevronWrapper}><span className={layoutStyles.chevronUp}></span></div>
-          </AnchorLink>
+      </div>
+      <div className={layoutStyles.panel + ' ' + layoutStyles.smallPanel}>
+        <div class={layoutStyles.footerContent}>
+          <div className={layoutStyles.signupSection}>
+            <h2>TAKE ACTION</h2>
+            <p>Sign up for updates on our Tech, Bias, and Housing research, educational events, and opportunities to get involved.</p>
+            <a target="_blank" href="https://techequitycollaborative.org/stay-in-the-loop-with-tech-bias-and-housing/"><button className={layoutStyles.signupButton}>Sign Up</button></a>
+          </div>
+          <div className={layoutStyles.footer}>
+            <p><strong><a target="_blank" href="https://techequitycollaborative.org/privacy-policy/">Privacy Policy</a> | <a target="_blank" href="https://techequitycollaborative.org/code-of-conduct/">Terms of Use</a></strong>&nbsp;&nbsp;&nbsp;<a href="tel:5102397472">Phone: (510) 239-7472‬</a> | <a href="mailto:info@techequitycollaborative.org">Email: info@techequitycollaborative.org</a>&nbsp;&nbsp;&nbsp;&copy; 2021 <strong><a target="_blank" href="https://techequitycollaborative.org">TechEquity Collaborative</a></strong>. All Rights Reserved.</p>
+          </div>
         </div>
       </div>
     </div>
