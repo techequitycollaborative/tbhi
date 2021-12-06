@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet"
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import * as layoutStyles from './layout.module.css'
-import HeaderBackground from '../components/header-background'
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Landscape from '../components/landscape.js'
 
@@ -24,19 +23,24 @@ const Layout = ({ pageTitle, children }) => {
       </Helmet>
       <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
         <a id="section1"></a>
-        <HeaderBackground>
-          <div className={layoutStyles.topContentWrapper}>
-            <a target="_blank" href="https://techequitycollaborative.org"><div className={layoutStyles.logo}><StaticImage src="../images/logo.png" alt="Logo" /></div></a>
-            <div className={layoutStyles.topContent}>
-              <h1>Tech, Bias, and Housing Initiative</h1>
+        <div className={layoutStyles.topContentWrapper}>
+          <a target="_blank" href="https://techequitycollaborative.org"><div className={layoutStyles.logo}><StaticImage src="../images/logo.png" alt="Logo" /></div></a>
+          <div className={layoutStyles.topContent}>
+            <h1>Tech, <span className={layoutStyles.accent}>Bias,</span> and<span className={layoutStyles.titleBreak}><br /></span>Housing Initiative</h1>
+            <div className={layoutStyles.introText}>
               <p>Whether you are trying to buy a home, apply for a rental property, or you’re looking for a roommate, there are an endless number of brand new companies and digital products offering to help you do just that. They promise speed, efficiency, and a modern approach to slow and sometimes exclusionary rental or homeownership processes.</p>
               <p>These new companies are venture-backed and digitally-enabled—and they play an increasingly influential role in the economy. From new modes of housing construction to automated home buying, tech-enabled companies promise to scale to massive market share and reap higher valuations along the way.</p>
               <p>As unprecedented capital investment flows into this space, venture-backed companies’ winner-take-all approach to growth has the potential to exacerbate inequality in the housing space. Under these conditions, startups’ disruption mindset creates a risky landscape that could—without ethical frameworks and processes to ensure equitable outcomes—dramatically accelerate racial and economic inequities.</p>
               <p>The Tech, Bias, and Housing Initiative examines these potential harms and biases through comprehensive research, corporate practice, and public policy advocacy.</p>
             </div>
+            <AnchorLink to="/#section2" title="Down" className={layoutStyles.downLink}>
+              <p>What we're building</p>
+              <span className={layoutStyles.chevronDown}></span>
+            </AnchorLink>
+            <div className={layoutStyles.clearFix}></div>
             <div className={layoutStyles.clearFix}></div>
           </div>
-        </HeaderBackground>
+        </div>
       </div>
       <div className={layoutStyles.panel + ' ' + layoutStyles.smallPanel}>
         <a id="section2"></a>
@@ -69,6 +73,7 @@ const Layout = ({ pageTitle, children }) => {
           <div className={layoutStyles.bottomContent}>
             <h2>Potential Harms</h2>
             <p>Our initial landscape assessment revealed harms that these tools and business models could potentially exacerbate—ultimately perpetuating bias and inequity in housing. Over the next year, we will explore these issues in depth in our working papers.</p>
+            <div className={layoutStyles.clearFix}></div>
             <div className={layoutStyles.harmsItem}>
               <div className={layoutStyles.harmsIconLg}><StaticImage src="../images/harms1.png" alt="Exclusionary Listings" /></div>
               <h3>Inaccurate Background Checks</h3>
@@ -89,6 +94,8 @@ const Layout = ({ pageTitle, children }) => {
               <h3>Hard-Coding Exclusionary Lending</h3>
               <p>Many years of <a target="_blank" title="Exclusionary Lending" href="https://www.theatlantic.com/business/archive/2014/05/the-racist-housing-policy-that-made-your-neighborhood/371439/">exclusionary lending</a> by banks contributed to the housing segregation and racial wealth inequities we see today. If existing housing market data shaped by <a target="_blank" title="Racist Housing Policies" href="https://www.nytimes.com/2020/09/18/business/digital-mortgages.html">racist housing policies</a> are used to train loan origination software, bias will be hard-coded in digital home financing products—the very products that promise to expand access to customers that traditional banks have discriminated against. This may cause first-time buyers to be targeted for <a target="_blank" title="Onerous Loan Terms" href="https://www.theatlantic.com/business/archive/2018/04/rent-to-own-redlining/557588/">onerous loan terms</a> and higher interest rates when navigating these pathways to homeownership. Bias in lending decisions will only exacerbate inequity for those who are not served by traditional financing, and could contribute to regressive homeownership costs.</p>
             </div>
+            <div className={layoutStyles.clearFix}></div>
+            <div className={layoutStyles.clearFix}></div>
           </div>
         </div>
       </div>

@@ -11,12 +11,13 @@
     display: block;
     text-align: center;
     background-color: #ff8144;
+    padding-top: 10vh;
     padding-bottom: 20px;
 }
 .header h2 {
     color: #fff;
     margin: 0;
-    padding: 40px 0 10px 0;
+    padding: 0 0 10px 0;
 }
 p.description {
     padding: 0;
@@ -28,6 +29,7 @@ p.description {
 .header-content {
     max-width: 1200px;
     margin: auto;
+    padding-bottom: 30px;
 }
 
 

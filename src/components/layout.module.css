@@ -22,9 +22,9 @@ h2 {
   padding: 10px;
   margin: 0px;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 2.6em;
-  font-weight: 300;
+  text-transform: lowercase;
+  font-size: 3.2em;
+  font-weight: 500;
 }
 h3 {
   text-align: center;
@@ -46,9 +46,8 @@ a:hover {
   color: #7482a8;
 }
 .logo {
-  position: absolute;
-  top: 30px;
-  left: 30px;
+  float: left;
+  padding: 30px 0 0 30px;
   width: 100px;
 }
 .container {
@@ -81,15 +80,25 @@ a:hover {
 /*TOP CONTENT*/
 .top-content-wrapper {
   min-height: 100vh;
+  background-color: #006AC3;
 }
 .top-content {
-  float: right;
-  width: 50%;
-  margin-top: 8vh;
-  padding-right: 30px;
+  max-width: 70%;
+  width: 1200px;
+  margin: auto;
 }
 .top-content h1 {
-  padding-bottom: 0;
+  padding: 12vh 10px 0 10px;
+  margin: 0;
+  font-weight: 600;
+  text-shadow: 3px 3px #00CEE1;
+  text-transform: lowercase;
+  font-size: 7em;
+  line-height: .9em;
+  text-align: left;
+}
+.top-content h1 .accent {
+  text-shadow: -3px 3px #FF8144, 3px 2px #00CEE1;
 }
 .top-content h2 {
   padding-top: 0;
@@ -99,6 +108,41 @@ a:hover {
 }
 .top-content p {
   text-align: justify;
+  line-height: 1.25em;
+}
+.intro-text {
+  column-count: 2;
+  padding-top: 2em;
+}
+
+.down-link {
+  margin: auto;
+  display: inline-block;
+  text-decoration: none;
+}
+.down-link:hover {
+  opacity: .7;
+}
+.down-link p {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.chevron-down::before {
+    border-style: solid;
+    border-width: 0.2em 0.2em 0 0;
+    content: '';
+    display: inline-block;
+    height: 3em;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 3em;
+    margin: -1em 0 0 0;
+    color: #fff;
+}
+.chevron-down:before {
+    transform: rotate(135deg);
 }
 
 
@@ -147,51 +191,62 @@ a:hover {
 .bottom-content-wrapper {
   min-height: 100vh;
   height: 100%;
-  background-color: #4f515a;
+  background-color: #e9f3f8;
 }
 .bottom-content {
-  padding: 40px 0;
+  padding: 10vh 0 30px 0;
   max-width: 900px;
   margin: auto;
   text-align: left;
 }
+.bottom-content h1, .bottom-content h2, .bottom-content h3, .bottom-content p {
+  color: #172f6e;
+}
 .bottom-content h3 {
   font-weight: bold;
   font-size: 1.4em;
+  padding-top: 16px;
 }
 .bottom-content h3, .bottom-content p {
   text-align: left;
 }
 .bottom-content a {
-  color: #e9f3f8;
+  font-weight: 500;
 }
 .bottom-content a:hover {
-  color: #66a6db;
+  opacity: .7;
 }
 .harms-icon, .harms-icon-lg {
   width: 3em;
   height: 3em;
   position: absolute;
-  transform: translate(-100%, 0);
+  transform: translate(-100%, 15%);
 }
 .harms-icon-lg {
   width: 2.4em;
-  transform: translate(-100%, 15%);
+  transform: translate(-100%, 25%);
 }
-
+.footer-content {
+  padding-top: 10vh;
+}
+.footer-content h2 {
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 400;
+}
 .footer-content h2, .footer-content p {
   color: #4f515a;
   text-align: center;
   padding-top: 0;
 }
 .signup-section {
-  padding-top: 40px;
   max-width: 500px;
   margin: auto;
+  padding-bottom: 30px;
 }
 .signup-button {
-    width: 200px;
-    margin: 10px 0 0 10px;
+    width: 95%;
+    margin: 30px 0 0 10px;
     border-radius: 0;
     height: 3em;
     font-size: 1em;
@@ -208,15 +263,18 @@ a:hover {
     color: #ff8144;
 }
 .footer {
-  margin-top: 40px;
-  margin-bottom: 4px;
+  margin-top: 60px;
   width: 100%;
 }
 .footer p {
   font-size: 1em;
+  background-color: #006AC3;
+  padding: 12px;
+  color: #fff;
 }
 .footer a {
   text-decoration: none;
+  color: #fff;
 }
 .footer a:hover {
   cursor: pointer;
@@ -239,7 +297,7 @@ a:hover {
     font-size: 3em;
   }
   h2 {
-    font-size: 2.2em;
+    font-size: 3em;
   }
   h3 {
     font-size: 1.2em;
@@ -256,6 +314,13 @@ a:hover {
   .bottom-content {
     width: 80%;
   }
+
+  .top-content h1 {
+    font-size: 6em;
+  }
+  .top-content p {
+    font-size: 1.1em;
+  }
 }
 
 
@@ -269,8 +334,25 @@ a:hover {
   .building-content p {
     font-size: .9em;
   }
+  .top-content h1 {
+    font-size: 5em;
+  }
+  .top-content p {
+    font-size: 1em;
+  }
 }
 
+
+
+@media screen and (max-width: 880px) {
+  .top-content h1 {
+    font-size: 4em;
+    padding-top: 120px;
+  }
+  .intro-text {
+    column-count: 1;
+  }
+}
 
 
 
@@ -283,13 +365,34 @@ a:hover {
     font-size: 2.4em;
   }
   h2 {
-    font-size: 1.8em;
+    font-size: 2.2em;
   }
   h3 {
     font-size: 1em;
   }
   p {
     font-size: .9em;
+  }
+
+  /*TOP CONTENT*/
+  .logo {
+    width: 80px;
+    padding: 20px 0 0 20px;
+  }
+  .top-content h1 {
+    font-size: 3em;
+    padding-top: 90px;
+  }
+  .top-content p {
+    font-size: .9em;
+  }
+  .down-link {
+    margin-top: 30px;
+  }
+  .chevron-down::before {
+      margin-top: 0;
+      height: 2em;
+      width: 2em;
   }
 
   /*SECOND PANEL*/
@@ -322,11 +425,15 @@ a:hover {
   .harms-icon, .harms-icon-lg {
     width: 1.6em;
     position: absolute;
-    transform: translate(-100%, 20%);
+    transform: translate(-100%, 35%);
   }
   .harms-icon-lg {
     width: 1.2em;
-    transform: translate(-100%, 30%);
+    transform: translate(-100%, 40%);
+  }
+
+  .footer-content h2 {
+    font-size: 3em;
   }
 }
 
@@ -335,8 +442,8 @@ a:hover {
 
 @media screen and (max-width: 640px) {
   .top-content {
-    width: 60%;
-    margin-top: 4vh;
+    width: 90%;
+    max-width: 90%;
   }
 }
 
@@ -351,7 +458,7 @@ a:hover {
     font-size: 1.8em;
   }
   h2 {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
   h3 {
     font-size: 1.2em;
@@ -366,18 +473,21 @@ a:hover {
   /*TOP CONTENT*/
   .logo {
     width: 40px;
-    left: 10px;
-    top: 10px;
+    padding: 10px 0 0 10px;
   }
   .top-content-wrapper {
     min-height: 0;
   }
   .top-content {
     width: auto;
-    margin: 0;
-    float: none;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, .4);
+  }
+  .top-content h1 {
+    font-size: 2em;
+    padding-top: 50px;
+  }
+  .top-content p {
+    font-size: .8em;
+    padding-top: 0;
   }
 
   /*SECOND PANEL*/
@@ -399,7 +509,7 @@ a:hover {
     text-align: center;
   }
   .signup-button {
-      width: 120px;
+      width: 90%;
       margin: 10px 0 0 10px;
       border-radius: 0;
       height: 2.6em;

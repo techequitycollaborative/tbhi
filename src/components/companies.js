@@ -65,8 +65,7 @@ class Companies extends Component{
                                        <div className={companyStyles.companies}>
                                           <h3>{row.name}</h3>
                                           <div className={companyStyles.descriptionWrapper}>
-                                             <p className={companyStyles.descriptionLabel}>Description (from their website):</p>
-                                             <p style={this.state.expanded ? {height: '100%'} : {height: '2.8em'}} className={companyStyles.description} dangerouslySetInnerHTML={{__html: row.description}}></p>
+                                             <p style={this.state.expanded ? {height: '100%'} : {height: '2.8em'}} className={companyStyles.description}><span className={companyStyles.descriptionLabel}>Description (from their website):</span> <span dangerouslySetInnerHTML={{__html: row.description}}></span></p>
                                              {this.state.expanded ? (
                                                 <p className={companyStyles.descriptionToggle} onClick={() => this.handleDescriptionToggle()}>(see less)</p>
                                              ) : (
@@ -75,9 +74,9 @@ class Companies extends Component{
                                           </div>
                                           <table className={companyStyles.twoCol}>
                                              <tbody>
-                                                <tr><td className={companyStyles.label}>Type:</td><td>{row.type}</td><td className={companyStyles.label}>Capital Raised:</td><td>{row.capital}</td></tr>
-                                                <tr><td className={companyStyles.label}>Website:</td><td><a target="_blank" href={row.url}>{row.url}</a></td><td className={companyStyles.label}>Key Investors:</td><td>{row.investors}</td></tr>
-                                                <tr><td className={companyStyles.label}>Target Customer:</td><td>{row.target}</td><td className={companyStyles.label}>Scale of Impact:</td><td>{row.scale}</td></tr>
+                                                <tr><td><span className={companyStyles.label}>Type:</span> {row.type}</td><td><span className={companyStyles.label}>Capital Raised:</span> {row.capital}</td></tr>
+                                                <tr><td><span className={companyStyles.label}>Website:</span> <a target="_blank" href={row.url}>{row.url}</a></td><td><span className={companyStyles.label}>Key Investors:</span> {row.investors}</td></tr>
+                                                <tr><td><span className={companyStyles.label}>Target Customer:</span> {row.target}</td><td><span className={companyStyles.label}>Scale of Impact:</span> {row.scale}</td></tr>
                                              </tbody>
                                           </table>
                                           <table className={companyStyles.oneCol}>

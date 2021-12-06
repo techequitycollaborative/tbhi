@@ -9,7 +9,7 @@
     font-weight: normal;
 }
 .table-header {
-    padding: 40px 0;
+    padding: 10vh 0 40px 0;
     max-width: 900px;
     margin: auto;
 }
@@ -34,10 +34,10 @@
 }
 
 .slider-prev {
-    left: -4em;
+    left: -8em;
 }
 .slider-next {
-    right: -1em;
+    right: -5em;
 }
 .slider-prev, .slider-next {
     font-size: 1em;
@@ -80,21 +80,13 @@
     width: 100%;
 }
 .description-label {
-    width: 34%;
-    display: inline-block;
-    padding: 0 0 0 1%;
-    margin: 0;
-    vertical-align: top;
     font-weight: bold;
-    font-size: 1.2em;
 }
 .description {
     overflow: hidden;
-    display: inline-block;
-    width: 65%;
-    padding: 0;
-    margin: 0;
     font-size: 1.2em;
+    height: 1.8em;
+    padding-bottom: 0;
 }
 p.description-toggle {
     text-align: right;
@@ -167,6 +159,16 @@ p.description-toggle:hover {
 
 
 /*RESPONSIVE STYLES*/
+@media screen and (max-width: 1200px) {
+    .slider-prev {
+        left: -4em;
+    }
+    .slider-next {
+        right: -1em;
+    }
+}
+
+
 @media screen and (max-width: 1100px) {
     .slider-prev {
         left: -3em;
@@ -204,13 +206,8 @@ p.description-toggle:hover {
         width: 90%;
         margin: auto;
     }
-    .description-label {
-        font-size: 1em;
-        width: 30%;
-    }
     .description {
         font-size: 1em;
-        width: 69%;
     }
 
 
@@ -231,7 +228,7 @@ p.description-toggle:hover {
         font-size: .9em;
         min-width: 0;
     }
-    .description-label, .description, p.description-toggle {
+    .description, p.description-toggle {
         font-size: .9em;
     }
     .one-col {
