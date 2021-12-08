@@ -4,30 +4,23 @@ import ReactModal from 'react-modal'
 import { Link } from 'gatsby'
 import * as companyStyles from './companies.module.css'
 import { StaticImage } from "gatsby-plugin-image"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-
-
-function PrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div className={companyStyles.sliderPrev} onClick={onClick}></div>
-  );
-}
-function NextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div className={companyStyles.sliderNext} onClick={onClick}></div>
-  );
-}
 
 class Companies extends Component{
    constructor(props) {
       super(props)
          this.state = {
+         modalState: 'closed',
          expanded: false
       }
+   }
+   handleModalOpen(modalName) {
+      // console.log('handleModalOpen: ', event);
+      this.setState({ modalState: modalName })
+   }
+
+   handleModalClose = event => {
+      // console.log('handleModalOpen: ', event);
+      this.setState({ modalState: 'closed' })
    }
 
    handleDescriptionToggle = () => {
@@ -37,17 +30,6 @@ class Companies extends Component{
    render() {
       const { category } = this.props;
 
-      const settings = {
-         dots: false,
-         infinite: true,
-         autoplay: false,
-         speed: 500,
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         nextArrow: <NextArrow />,
-         prevArrow: <PrevArrow />
-      }
-
       return(
          <div>
             {JSONData.content.map((data, index) => {
@@ -55,46 +37,63 @@ class Companies extends Component{
                   return <div>
                         <div className={companyStyles.tableHeader}>
                            <h2 className={companyStyles.tableTitle}>{data.title}</h2>
-                           <p className={companyStyles.tableDescription}>{data.description}</p>
+                           <p className={companyStyles.tableDescription}>{data.description} <i>Click each row for more details about the company.</i></p>
                         </div>
-                        <div className={companyStyles.sliderWrapper}>
-                           <div className={companyStyles.sliderContent}>
-                              <Slider {...settings} className="overflow-hidden">
+                        <table>
+                           <tbody>
+                              <tr className={companyStyles.tableHeader}><th className={companyStyles.column1}>Company</th><th className={companyStyles.column2}>Type</th><th className={companyStyles.column3}>Capital Raised</th><th className={companyStyles.column4}>Key Investors</th></tr>
                               {data.companies.map((row, index) => {
-                                 return <div>
-                                       <div className={companyStyles.companies}>
-                                          <h3>{row.name}</h3>
-                                          <div className={companyStyles.descriptionWrapper}>
-                                             <p style={this.state.expanded ? {height: '100%'} : {height: '2.8em'}} className={companyStyles.description}><span className={companyStyles.descriptionLabel}>Description (from their website):</span> <span dangerouslySetInnerHTML={{__html: row.description}}></span></p>
+                                 return <tr onClick={() => this.handleModalOpen(row.name)}>
+                                    <td><div className={companyStyles.tableIcon}>
+                                       {data.title == 'Tenant Screening' ? <StaticImage src="../images/icon-ts-o.png" alt="Tenant Screening" /> : null }
+                                       {data.title == 'Homebuying' ? <StaticImage src="../images/icon-hb-o.png" alt="Homebuying" /> : null }
+                                       {data.title == 'Home Financing' ? <StaticImage src="../images/icon-hf-o.png" alt="Home Financing" /> : null }
+                                       {data.title == 'Construction' ? <StaticImage src="../images/icon-cn-o.png" alt="Construction" /> : null }
+                                       {data.title == 'Shared Living' ? <StaticImage src="../images/icon-sl-o.png" alt="Shared Living" /> : null }
+                                       </div>{row.name}</td>
+                                    <td>{row.type}</td>
+                                    <td>{row.capital}</td>
+                                    <td className={companyStyles.column4}>{row.investors}</td>
+                                 </tr>
+                              })}
+                           </tbody>
+                        </table>
+                        {data.companies.map((row, index) => {
+                           return <ReactModal
+                                isOpen={this.state.modalState == row.name}
+                                onRequestClose={this.handleModalClose}
+                                contentLabel="Company Info"
+                                style={{
+                                 content: {
+                                    inset: '10vh 18%',
+                                    padding: '30px 40px'
+                                 }
+                                }}
+                              >
+                                 <button className={companyStyles.closeButton} onClick={this.handleModalClose}><StaticImage src="../images/close.png" alt="Close" /></button>
+                                 <div className={companyStyles.companies}>
+                                    <h2>{row.name}</h2>
+                                    <table>
+                                       <tbody>
+                                          <tr><td className={companyStyles.label}>Type:</td><td>{row.type}</td></tr>
+                                          <tr><td className={companyStyles.label}>Website:</td><td><a target="_blank" href={'http://' + row.url}>{row.url}</a></td></tr>
+                                          <tr><td className={companyStyles.label}>Capital Raised:</td><td>{row.capital}</td></tr>
+                                          <tr><td className={companyStyles.label}>Key Investors:</td><td>{row.investors}</td></tr>
+                                          <tr><td className={companyStyles.label}>Description:<br /><span className={companyStyles.labelSub}>(from their website)</span></td><td><span style={this.state.expanded ? {height: '100%'} : {height: '2.8em'}} className={companyStyles.description} dangerouslySetInnerHTML={{__html: row.description}}></span>
                                              {this.state.expanded ? (
                                                 <p className={companyStyles.descriptionToggle} onClick={() => this.handleDescriptionToggle()}>(see less)</p>
                                              ) : (
                                                 <p className={companyStyles.descriptionToggle} onClick={() => this.handleDescriptionToggle()}>... (see more)</p>
                                              )}
-                                          </div>
-                                          <table className={companyStyles.twoCol}>
-                                             <tbody>
-                                                <tr><td><span className={companyStyles.label}>Type:</span> {row.type}</td><td><span className={companyStyles.label}>Capital Raised:</span> {row.capital}</td></tr>
-                                                <tr><td><span className={companyStyles.label}>Website:</span> <a target="_blank" href={row.url}>{row.url}</a></td><td><span className={companyStyles.label}>Key Investors:</span> {row.investors}</td></tr>
-                                                <tr><td><span className={companyStyles.label}>Target Customer:</span> {row.target}</td><td><span className={companyStyles.label}>Scale of Impact:</span> {row.scale}</td></tr>
-                                             </tbody>
-                                          </table>
-                                          <table className={companyStyles.oneCol}>
-                                             <tbody>
-                                                <tr><td className={companyStyles.label}>Type:</td><td>{row.type}</td></tr>
-                                                <tr><td className={companyStyles.label}>Website:</td><td><a target="_blank" href={row.url}>{row.url}</a></td></tr>
-                                                <tr><td className={companyStyles.label}>Target Customer:</td><td>{row.target}</td></tr>
-                                                <tr><td className={companyStyles.label}>Capital Raised:</td><td>{row.capital}</td></tr>
-                                                <tr><td className={companyStyles.label}>Key Investors:</td><td>{row.investors}</td></tr>
-                                                <tr><td className={companyStyles.label}>Scale of Impact:</td><td>{row.scale}</td></tr>
-                                             </tbody>
-                                          </table>
-                                       </div>
-                                    </div>
-                              })}
-                              </Slider>
-                           </div>
-                        </div>
+                                          </td></tr>
+                                          <tr><td className={companyStyles.label}>Target Customer:</td><td>{row.target}</td></tr>
+                                          <tr><td className={companyStyles.label}>Scale of Impact:</td><td>{row.scale}</td></tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </ReactModal>
+                        })}
+
                      </div>
                }
             })}

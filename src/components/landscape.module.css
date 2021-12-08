@@ -2,7 +2,6 @@
     color: #4F515A;
 }
 .landscape {
-    background-color: #f2f8fb;
     height: 100%;
     min-height: 100vh;
 }
@@ -10,12 +9,10 @@
 .header {
     display: block;
     text-align: center;
-    background-color: #ff8144;
     padding-top: 10vh;
-    padding-bottom: 20px;
 }
 .header h2 {
-    color: #fff;
+    color: #C74200;
     margin: 0;
     padding: 0 0 10px 0;
 }
@@ -24,12 +21,11 @@ p.description {
     margin: auto;
     margin-bottom: 10px;
     width: 80%;
-    color:  #fff;
+    color:  #696C78;
 }
 .header-content {
     max-width: 1200px;
     margin: auto;
-    padding-bottom: 30px;
 }
 
 
@@ -43,10 +39,10 @@ p.description {
 }
 
 .heading {
+    background-color: #ff8144;
     cursor: pointer;
-    border: 2px solid #fff;
+    border: 1px solid #C74200;
     color: #fff;
-    padding: 2px 0;
 }
 .heading h3, .heading p {
     color: #fff;
@@ -66,8 +62,8 @@ p.description {
 }
 
 .active-heading {
-    background-color: #bf6133;
-    border: 4px solid #fff;
+    background-color: #C74200;
+    border: 1px solid #ff8144;
     padding: 0;
 }
 .active-heading:hover {
@@ -80,14 +76,14 @@ p.description {
     border-width: 0.2em 0.2em 0 0;
     content: '';
     display: inline-block;
-    height: 0.75em;
+    height: 2.2em;
+    width: 2.2em;
     position: relative;
-    top: 0.3em;
+    top: 0;
     transform: rotate(-45deg);
     vertical-align: top;
-    width: 0.75em;
     margin: 0;
-    color: #fff;
+    color: #ff8144;
 }
 .chevron-down:before {
     transform: rotate(135deg);
@@ -104,7 +100,7 @@ p.description {
 
 
 .landscape-content {
-    padding: 0;
+    padding: 0 0 60px 0;
 }
 .landscape-content h1 {
     padding-bottom: 0;
@@ -115,21 +111,32 @@ p.description {
 }
 
 .landscape table {
-    max-width: 900px;
+    width: 900px;
     margin: auto;
     border-collapse: collapse;
 }
-.landscape th {
-    background-color: #a5a7ae;
-    font-weight: bold;
-    color: #4f515a;
-}
 .landscape th, .landscape td {
     border: none;
-    padding: 8px;
+    padding: 24px 8px;
     border-spacing: 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: left;
+}
+.landscape th {
+    color: #C74200;
+    padding-bottom: 16px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.landscape td {
+    border-bottom: 1px solid #C74200;
+    position: relative;
+}
+.landscape tr:hover {
+    opacity: .7;
+}
+.landscape td:hover {
+    cursor: pointer;
 }
 
 
@@ -186,6 +193,12 @@ p.description {
     }
     .heading {
         min-height: 7.3em;
+    }
+    .landscape table {
+        font-size: .8em;
+    }
+    .chevron-down {
+        display: none;
     }
 }
 

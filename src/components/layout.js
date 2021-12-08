@@ -71,7 +71,7 @@ const Layout = ({ pageTitle, children }) => {
         <a id="section4"></a>
         <div className={layoutStyles.bottomContentWrapper}>
           <div className={layoutStyles.bottomContent}>
-            <h2>Potential Harms</h2>
+            <h2>Areas for Research</h2>
             <p>Our initial landscape assessment revealed harms that these tools and business models could potentially exacerbate—ultimately perpetuating bias and inequity in housing. Over the next year, we will explore these issues in depth in our working papers.</p>
             <div className={layoutStyles.clearFix}></div>
             <div className={layoutStyles.harmsItem}>

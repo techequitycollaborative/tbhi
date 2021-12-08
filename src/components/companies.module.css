@@ -1,6 +1,11 @@
 .companies h1, .companies h2, .companies h3, .companies p, .companies th, .companies td {
     font-family: 'freight-sans-pro', 'Source Sans Pro', sans-serif;
-    color: #172f6e;
+    color: #696C78;
+}
+.companies h2 {
+    color: #C74200;
+    text-transform: none;
+    font-weight: 400;
 }
 .companies h3 {
     font-size: 2.2em;
@@ -9,20 +14,22 @@
     font-weight: normal;
 }
 .table-header {
-    padding: 10vh 0 40px 0;
     max-width: 900px;
     margin: auto;
 }
 .table-title {
-    display: inline-block;
-    vertical-align: middle;
+    font-size: 2.4em;
+    font-color: #696C78;
 }
-.table-subtitle {
-    display: inline-block;
-    vertical-align: middle;
-    font-weight: normal;
-    margin-top: 5px;
+.table-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
 }
+
 
 .slider-wrapper {
     width: 100%;
@@ -84,16 +91,16 @@
 }
 .description {
     overflow: hidden;
-    font-size: 1.2em;
     height: 1.8em;
     padding-bottom: 0;
+    display: block;
 }
 p.description-toggle {
     text-align: right;
-    font-weight: bold;
+    font-style: italic;
     font-size: 1em;
-    padding-right: 20px;
     cursor: pointer;
+    padding: 0;
 }
 p.description-toggle:hover {
     opacity: .7;
@@ -110,6 +117,7 @@ p.description-toggle:hover {
 .companies td {
     min-width: 150px;
     vertical-align: top;
+
 }
 
 .close-button {
@@ -132,8 +140,18 @@ p.description-toggle:hover {
     height: 100%;
 }
 
-.label {
+td.label {
     font-weight: bold;
+    color: #C74200;
+    padding-right: 30px;
+}
+.label-sub {
+    color: #696C78;
+    font-weight: 400;
+    font-style: italic;
+}
+tr.table-header:hover {
+    opacity: 1;
 }
 
 
@@ -141,13 +159,13 @@ p.description-toggle:hover {
     width: 15%;
 }
 .column2 {
-    width: 25%;
+    width: 30%;
 }
 .column3 {
     width: 20%;
 }
 .column4 {
-    width: 40%;
+    width: 35%;
 }
 
 .one-col {
@@ -237,6 +255,9 @@ p.description-toggle:hover {
     .two-col {
         display: none;
     }
+    .table-icon {
+        display: none;
+    }
 }
 
 
@@ -255,11 +276,24 @@ p.description-toggle:hover {
     .column4 {
         display: none;
     }
-
-
+    .companies h2 {
+        font-size: 1.6em;
+    }
+    .close-button {
+        width: 10px;
+        height: 10px;
+        margin: 4px;
+    }
     .companies td {
         min-width: 0;
         vertical-align: top;
         font-size: .75em;
     }
+    .companies table {
+        margin-left: -20px;
+    }
+    .companies td {
+        min-width: 0;
+    }
+
 }
