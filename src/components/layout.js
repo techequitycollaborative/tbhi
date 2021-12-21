@@ -14,11 +14,13 @@ const Layout = ({ pageTitle, children }) => {
         <title>Tech, Bias, and Housing Initiative</title>
         <link rel="canonical" href="https://housing.techbias.org/" />
         <link rel="icon" type="image/png" sizes="32x32" href="https://techequitycollaborative.org/wp-content/themes/radicati/dist/images/favicons/favicon-32x32.png" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103596359-3"></script>
-        <script type="application/ld+json">{`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('config', 'UA-103596359-3');
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5JR6KH2WN"></script>
+        <script>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-L5JR6KH2WN');
         `}</script>
       </Helmet>
       <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
