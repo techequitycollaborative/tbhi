@@ -35,7 +35,7 @@ const Layout = ({ pageTitle, children }) => {
               <p>As unprecedented capital investment flows into this space, venture-backed companies’ winner-take-all approach to growth has the potential to exacerbate inequality in the housing space. Under these conditions, startups’ disruption mindset creates a risky landscape that could—without ethical frameworks and processes to ensure equitable outcomes—dramatically accelerate racial and economic inequities.</p>
               <p>The Tech, Bias, and Housing Initiative examines these potential harms and biases through comprehensive research, corporate practice, and public policy advocacy.</p>
             </div>
-            <a className={layoutStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/"><button className={layoutStyles.downloadButton}>Read the tenant screening paper</button></a>
+            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/"><button className={layoutStyles.downloadButton}>Read the tenant screening paper</button></a></div>
             <AnchorLink to="/#section2" title="Down" className={layoutStyles.downLink}>
               <p>What we're building</p>
               <span className={layoutStyles.chevronDown}></span>

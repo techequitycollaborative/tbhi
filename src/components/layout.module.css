@@ -145,12 +145,16 @@ a:hover {
     transform: rotate(135deg);
 }
 
+.button-wrapper {
+    display: block;
+    margin: 40px auto;
+}
 .download-link {
     text-decoration: none;
+    display: inline-block;
 }
 .download-button {
     display: block;
-    margin: 30px auto;
     padding: 0 20px;
     border-radius: 0;
     height: 3em;

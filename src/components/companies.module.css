@@ -30,12 +30,16 @@
     transform: translate(-100%, -50%);
 }
 
+.button-wrapper {
+    display: block;
+    margin: 60px auto 20px auto;
+}
 .download-link {
     text-decoration: none;
+    display: inline-block;
 }
 .download-button {
     display: block;
-    margin: 60px auto 20px auto;
     padding: 0 20px;
     border-radius: 0;
     height: 3em;
