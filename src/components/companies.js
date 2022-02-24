@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
 import JSONData from './companies.json'
 import ReactModal from 'react-modal'
-import { Link } from 'gatsby'
 import * as companyStyles from './companies.module.css'
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -33,7 +32,7 @@ class Companies extends Component{
       return(
          <div>
             {JSONData.content.map((data, index) => {
-               if (data.title == category) {
+               if (data.title === category) {
                   return <div>
                         <div className={companyStyles.tableHeader}>
                            <h2 className={companyStyles.tableTitle}>{data.title}</h2>
@@ -45,11 +44,11 @@ class Companies extends Component{
                               {data.companies.map((row, index) => {
                                  return <tr onClick={() => this.handleModalOpen(row.name)}>
                                     <td><div className={companyStyles.tableIcon}>
-                                       {data.title == 'Tenant Screening' ? <StaticImage src="../images/icon-ts-o.png" alt="Tenant Screening" /> : null }
-                                       {data.title == 'Homebuying' ? <StaticImage src="../images/icon-hb-o.png" alt="Homebuying" /> : null }
-                                       {data.title == 'Home Financing' ? <StaticImage src="../images/icon-hf-o.png" alt="Home Financing" /> : null }
-                                       {data.title == 'Construction' ? <StaticImage src="../images/icon-cn-o.png" alt="Construction" /> : null }
-                                       {data.title == 'Shared Living' ? <StaticImage src="../images/icon-sl-o.png" alt="Shared Living" /> : null }
+                                       {data.title === 'Tenant Screening' ? <StaticImage src="../images/icon-ts-o.png" alt="Tenant Screening" /> : null }
+                                       {data.title === 'Homebuying' ? <StaticImage src="../images/icon-hb-o.png" alt="Homebuying" /> : null }
+                                       {data.title === 'Home Financing' ? <StaticImage src="../images/icon-hf-o.png" alt="Home Financing" /> : null }
+                                       {data.title === 'Construction' ? <StaticImage src="../images/icon-cn-o.png" alt="Construction" /> : null }
+                                       {data.title === 'Shared Living' ? <StaticImage src="../images/icon-sl-o.png" alt="Shared Living" /> : null }
                                        </div>{row.name}</td>
                                     <td>{row.type}</td>
                                     <td>{row.capital}</td>
@@ -58,6 +57,7 @@ class Companies extends Component{
                               })}
                            </tbody>
                         </table>
+                        {data.title === 'Tenant Screening' ? <a className={companyStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/"><button className={companyStyles.downloadButton}>Read the tenant screening paper</button></a> : null }                       
                         {data.companies.map((row, index) => {
                            return <ReactModal
                                 isOpen={this.state.modalState == row.name}
