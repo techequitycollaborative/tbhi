@@ -171,6 +171,10 @@ a:hover {
     background-color: #fff;
     color: #ff8144;
 }
+.tall-button {
+  height: 4em;
+  padding: 0 40px;
+}
 
 
 

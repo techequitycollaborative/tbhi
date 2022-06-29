@@ -57,7 +57,8 @@ class Companies extends Component{
                               })}
                            </tbody>
                         </table>
-                        {data.title === 'Tenant Screening' ? <div className={companyStyles.buttonWrapper}><a className={companyStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/"><button className={companyStyles.downloadButton}>Read the tenant screening paper</button></a></div> : null }                       
+                        {data.title === 'Tenant Screening' ? <div className={companyStyles.buttonWrapper}><a className={companyStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/"><button className={companyStyles.downloadButton}>Read the tenant screening paper</button></a></div> : null }
+                        {data.title === 'Homebuying' ? <div className={companyStyles.buttonWrapper}><a className={companyStyles.downloadLink} target="_blank" href=""><button className={companyStyles.downloadButton}>Read the homebuying paper</button></a></div> : null }
                         {data.companies.map((row, index) => {
                            return <ReactModal
                                 isOpen={this.state.modalState == row.name}
