@@ -66,34 +66,6 @@ const Layout = ({ pageTitle, children }) => {
           </div>
         </div>
       </div>
-      <div className={layoutStyles.panel + ' ' + layoutStyles.smallPanel}>
-        <a id="section3"></a>
-        <div className={layoutStyles.paperContent}>
-          <h2>our research papers</h2>
-          <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/">
-            <div className={layoutStyles.paperPanel}>
-              <div className={layoutStyles.paperPanelContent}>
-                <h2>Tech bias in tenant screening</h2>
-                <p>It’s time to take a closer look at tenant screening tools that can be the gateway to rental housing and the impact they have on housing accessibility.</p>
-                <div className={layoutStyles.moreButton}>
-                  More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
-                </div>
-              </div>
-            </div>
-          </a>
-          <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/06/29/sold-to-the-highest-bidder-how-tech-is-cashing-in-on-the-american-dream/">
-            <div className={layoutStyles.paperPanel + ' ' + layoutStyles.paperPanelRight}>
-              <div className={layoutStyles.paperPanelContent}>
-                <h2>Sold to the highest bidder</h2>
-                <p>Tech is enabling an emerging new class of corporate landlords that exacerbate harm and take advantage of increasingly desperate renters and would-be homeowners.</p>
-                <div className={layoutStyles.moreButton}>
-                  More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
       <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
         <a id="section4"></a>
         <Landscape></Landscape>
