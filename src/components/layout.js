@@ -14,6 +14,33 @@ const Layout = ({ pageTitle, children }) => {
         <title>Tech, Bias, and Housing Initiative</title>
         <link rel="canonical" href="https://housing.techbias.org/" />
         <link rel="icon" type="image/png" sizes="32x32" href="https://techequitycollaborative.org/wp-content/themes/radicati/dist/images/favicons/favicon-32x32.png" />
+
+        <meta itemprop="name" content="Tech, Bias, and Housing Initiative" />
+        <meta itemprop="image" content="https://techequitycollaborative.org/wp-content/uploads/2022/02/Algorithms-Bias-and-Housing-event-600x365.jpg" />
+        <meta
+          itemprop="description"
+          content="The Tech, Bias, and Housing Initiative examines the promise and perils of housing tech; where tech companies are exacerbating inequity and where they can help fix it."
+        />
+
+        <meta property="og:title" content="Tech, Bias, and Housing Initiative" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://housing.techbias.org/" />
+        <meta property="og:site_name" content="Tech, Bias, and Housing Initiative" />
+        <meta property="og:image" content="https://techequitycollaborative.org/wp-content/uploads/2022/02/Algorithms-Bias-and-Housing-event-600x365.jpg" />
+        <meta
+          property="og:description"
+          content="The Tech, Bias, and Housing Initiative examines the promise and perils of housing tech; where tech companies are exacerbating inequity and where they can help fix it."
+        />
+
+        <meta name="twitter:title" content="Tech, Bias, and Housing Initiative" />
+        <meta name="twitter:image" content="../images/tbhi_share.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image:alt" content="TechEquity Collaborative logo" />
+        <meta
+          property="twitter:description"
+          content="The Tech, Bias, and Housing Initiative examines the promise and perils of housing tech; where tech companies are exacerbating inequity and where they can help fix it."
+        />
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5JR6KH2WN"></script>
         <script>{`
           window.dataLayer = window.dataLayer || [];
