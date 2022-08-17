@@ -33,7 +33,7 @@ const Layout = ({ pageTitle, children }) => {
         />
 
         <meta name="twitter:title" content="Tech, Bias, and Housing Initiative" />
-        <meta name="twitter:image" content="../images/tbhi_share.jpg" />
+        <meta name="twitter:image" content="https://techequitycollaborative.org/wp-content/uploads/2022/02/Algorithms-Bias-and-Housing-event-600x365.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="TechEquity Collaborative logo" />
         <meta
