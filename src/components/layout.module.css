@@ -230,17 +230,18 @@ a:hover {
 .paper-panel {
   display:  inline-block;
   background-color: #ff8144;
-  width: 49%;
+  width: 32%;
   position: relative;
   vertical-align: top;
   margin-top: 1em;
+  margin-right: 1%;
 }
 .paper-panel:hover {
   background-color: #C74200;
   cursor: pointer;
 }
-.paper-panel-right{
-  margin-left: 2%;
+.paper-panel-left {
+  margin-left: 1%;
 }
 .paper-panel-content {
   padding: 15%;
@@ -251,7 +252,7 @@ a:hover {
   font-weight: normal;
 }
 .paper-panel-content p {
-  min-height: 5.4em;
+  min-height: 6.6em;
 }
 .more-button {
   position: absolute;

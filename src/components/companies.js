@@ -59,6 +59,7 @@ class Companies extends Component{
                         </table>
                         {data.title === 'Tenant Screening' ? <div className={companyStyles.buttonWrapper}><a className={companyStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/"><button className={companyStyles.downloadButton}>Read the tenant screening paper</button></a></div> : null }
                         {data.title === 'Homebuying' ? <div className={companyStyles.buttonWrapper}><a className={companyStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2022/06/29/sold-to-the-highest-bidder-how-tech-is-cashing-in-on-the-american-dream/"><button className={companyStyles.downloadButton}>Read the homebuying paper</button></a></div> : null }
+                        {data.title === 'Home Financing' ? <div className={companyStyles.buttonWrapper}><a className={companyStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2022/11/01/rent-to-own-the-american-dream-paper/"><button className={companyStyles.downloadButton}>Read the home financing paper</button></a></div> : null }
                         {data.companies.map((row, index) => {
                            return <ReactModal
                                 isOpen={this.state.modalState == row.name}

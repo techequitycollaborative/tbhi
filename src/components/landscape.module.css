@@ -51,6 +51,7 @@ p.description {
 }
 .heading h3 {
     font-size: 1.2em;
+    font-weight: normal;
 }
 .heading-img {
     width: 50px;
