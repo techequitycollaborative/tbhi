@@ -451,9 +451,13 @@ a:hover {
   .top-content h1 {
     font-size: 4em;
     padding-top: 120px;
+    text-shadow: 2px 2px #00CEE1;
   }
   .intro-text {
     column-count: 1;
+  }
+  .top-content h1 .accent {
+    text-shadow: -2px 2px #FF8144, 2px 1px #00CEE1;
   }
 
   .paper-panel-content {
@@ -607,6 +611,10 @@ a:hover {
   .top-content h1 {
     font-size: 2em;
     padding-top: 50px;
+    text-shadow: 1.5px 1.5px #00CEE1;
+  }
+  .top-content h1 .accent {
+    text-shadow: -1.5px 1.5px #FF8144, 1.5px 1px #00CEE1;
   }
   .top-content p {
     font-size: .8em;
