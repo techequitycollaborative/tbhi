@@ -62,7 +62,7 @@ const Layout = ({ pageTitle, children }) => {
               <p>As unprecedented capital investment flows into this space, venture-backed companies’ winner-take-all approach to growth has the potential to exacerbate inequality in the housing space. Under these conditions, startups’ disruption mindset creates a risky landscape that could—without ethical frameworks and processes to ensure equitable outcomes—dramatically accelerate racial and economic inequities.</p>
               <p>The Tech, Bias, and Housing Initiative examines these potential harms and biases through comprehensive research, corporate practice, and public policy advocacy.</p>
             </div>
-            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href=""><button className={layoutStyles.downloadButton + ' ' + layoutStyles.tallButton}>Download the summary report</button></a></div>
+            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2023/04/25/the-promises-and-perils-of-residential-proptech-year-1-summary-report/"><button className={layoutStyles.downloadButton + ' ' + layoutStyles.tallButton}>Download the summary report</button></a></div>
             <AnchorLink to="/#section2" title="Down" className={layoutStyles.downLink}>
               <p>What we know</p>
               <span className={layoutStyles.chevronDown}></span>
@@ -110,7 +110,7 @@ const Layout = ({ pageTitle, children }) => {
                 </div>
               </div>
             </div>
-            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href=""><button className={layoutStyles.button}>Read the summary report</button></a></div>
+            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2023/04/25/the-promises-and-perils-of-residential-proptech-year-1-summary-report/"><button className={layoutStyles.button}>Read the summary report</button></a></div>
             <div className={layoutStyles.clearFix}></div>
             <div className={layoutStyles.clearFix}></div>
           </div>
@@ -151,7 +151,7 @@ const Layout = ({ pageTitle, children }) => {
                 <p className={layoutStyles.columnContent}>Engage in the broader societal conversation about housing—and use your position to advocate for change</p>
               </div>
             </div>
-            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href=""><button className={layoutStyles.button + ' ' + layoutStyles.buttonDark}>Download the guide</button></a></div>
+            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2023/04/25/residential-proptech-ethical-practice-guide/"><button className={layoutStyles.button + ' ' + layoutStyles.buttonDark}>Download the guide</button></a></div>
           </div>
         </div>
       </div>

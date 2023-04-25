@@ -73,17 +73,17 @@ a:hover {
 }
 .button {
     display: block;
-    padding: 0 60px;
+    padding: 0 80px;
     border-radius: 0;
     height: 3em;
-    font-size: 1em;
+    font-size: 1.2em;
     border: 3px #ff8144 solid;
     border-radius: .5em;
     cursor: pointer;
     background-color: #ff8144;
     color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
 }
 .button:hover {
     background-color: #fff;
@@ -183,14 +183,14 @@ a:hover {
     padding: 0 20px;
     border-radius: 0;
     height: 3em;
-    font-size: 1em;
+    font-size: 1.2em;
     border: 3px #ff8144 solid;
     border-radius: .5em;
     cursor: pointer;
     background-color: #ff8144;
     color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
 }
 .download-button:hover {
     background-color: #fff;
@@ -198,7 +198,7 @@ a:hover {
 }
 .tall-button {
   height: 4em;
-  padding: 0 40px;
+  padding: 0 80px;
 }
 .subtitle {
   margin-top: -1em;
@@ -227,10 +227,10 @@ a:hover {
   text-align: left;
 }
 .bottom-content h3 {
-  font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.9em;
   text-transform: lowercase;
-  font-weight: 600;
+  font-weight: 400;
+  margin-bottom: -10px;
 }
 .bottom-content .subtitle {
   color: #696C78;
@@ -278,9 +278,10 @@ a:hover {
   text-align: left;
 }
 .building-content h3 {
-  font-size: 1.6em;
+  font-size: 1.9em;
   text-transform: lowercase;
-  font-weight: 600;
+  font-weight: 400;
+  margin-bottom: -10px;
 }
 .building-content .subtitle {
   color: #696C78;
@@ -324,9 +325,10 @@ a:hover {
   text-align: left;
 }
 .going-content h3 {
-  font-size: 1.6em;
+  font-size: 1.9em;
   text-transform: lowercase;
-  font-weight: 600;
+  font-weight: 400;
+  margin-bottom: -10px;
 }
 .going-column-wrapper {
   width: 100%;
@@ -337,12 +339,12 @@ a:hover {
 }
 .going-column {
   display: inline-block;
-  width: 25%;
+  width: 26%;
   vertical-align: top;
   margin: 0 20px 10px 10px;
-  padding: 2%;
+  padding: 1.5%;
   border: solid 2px #fff;
-  min-height: 20em;
+  min-height: 19em;
 }
 
 
@@ -393,9 +395,13 @@ a:hover {
   color: #fff;
   font-size: 2.2em;
   font-weight: normal;
+  text-align: left;
+  padding-left: .3em;
+  line-height: 1.05em;
 }
 .paper-panel-content p {
   min-height: 6.6em;
+  text-align: left;
 }
 .more-button {
   position: absolute;
@@ -446,14 +452,14 @@ a:hover {
     margin: 30px 0 0 10px;
     border-radius: 0;
     height: 3em;
-    font-size: 1em;
+    font-size: 1.2em;
     border: 3px #ff8144 solid;
     border-radius: .5em;
     cursor: pointer;
     background-color: #ff8144;
     color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
 }
 .signup-button:hover {
     background-color: transparent;
@@ -526,7 +532,7 @@ a:hover {
   .going-column {
     font-size: .85em;
     min-height: 24em;
-    width: 24%;
+    width: 25%;
   }
 }
 
@@ -565,6 +571,7 @@ a:hover {
   }
   .going-column {
     min-height: 28em;
+    width: 24%;
   }
 }
 
