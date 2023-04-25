@@ -62,9 +62,9 @@ const Layout = ({ pageTitle, children }) => {
               <p>As unprecedented capital investment flows into this space, venture-backed companies’ winner-take-all approach to growth has the potential to exacerbate inequality in the housing space. Under these conditions, startups’ disruption mindset creates a risky landscape that could—without ethical frameworks and processes to ensure equitable outcomes—dramatically accelerate racial and economic inequities.</p>
               <p>The Tech, Bias, and Housing Initiative examines these potential harms and biases through comprehensive research, corporate practice, and public policy advocacy.</p>
             </div>
-            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2022/11/01/rent-to-own-the-american-dream-paper/"><button className={layoutStyles.downloadButton + ' ' + layoutStyles.tallButton}>Rent to own the American dream:<br />Read the paper</button></a></div>
+            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href=""><button className={layoutStyles.downloadButton + ' ' + layoutStyles.tallButton}>Download the summary report</button></a></div>
             <AnchorLink to="/#section2" title="Down" className={layoutStyles.downLink}>
-              <p>What we're building</p>
+              <p>What we know</p>
               <span className={layoutStyles.chevronDown}></span>
             </AnchorLink>
             <div className={layoutStyles.clearFix}></div>
@@ -72,104 +72,156 @@ const Layout = ({ pageTitle, children }) => {
           </div>
         </div>
       </div>
-      <div className={layoutStyles.panel + ' ' + layoutStyles.smallPanel}>
+      <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
         <a id="section2"></a>
-        <div className={layoutStyles.buildingContent}>
-          <h2>What We're Building</h2>
-          <p>The Tech, Bias, and Housing Initiative has three main components:</p>
-          <div className={layoutStyles.columnWrapper}>
-            <div className={layoutStyles.column}>
-              <h3>Research</h3>
-              <p className={layoutStyles.columnContent}>We will shed light on spaces where these new classes of companies could exacerbate—or mitigate—racial bias in the housing market.</p>
+        <div className={layoutStyles.bottomContentWrapper}>
+          <div className={layoutStyles.bottomContent}>
+            <h2>What we know</h2>
+            <p className={layoutStyles.subtitle}>the key takeaways from a year of research</p>
+            <div className={layoutStyles.harmsColumnWrapper}>
+              <div className={layoutStyles.harmsColumn}>
+                <div className={layoutStyles.harmsIcon}><StaticImage src="../images/alternative_financing.svg" alt="Exclusionary Listings" /></div>
+                <div className={layoutStyles.harmsColumnContent}>
+                  <h3>Alternative financing pitfalls</h3>
+                  <p>Alternative paths to homeownership like rent-to-own echo discriminatory and predatory practices of the past.</p>
+                </div>
+              </div>
+              <div className={layoutStyles.harmsColumn}>
+                <div className={layoutStyles.harmsIcon}><StaticImage src="../images/tech_bias_in_screening.svg" alt="Exclusionary Listings" /></div>
+                <div className={layoutStyles.harmsColumnContent}>
+                  <h3>Tech bias in screening</h3>
+                  <p>Algorithms used to determine who gets housing are opaque, predictive, and frequently based on inaccurate data.</p>
+                </div>
+              </div>
             </div>
-            <div className={layoutStyles.column}>
-              <h3>Policy</h3>
-              <p className={layoutStyles.columnContent}>In close partnership with other organizations in the housing justice movement, we will develop and advocate for public policy that addresses the harms we identify through our research.</p>
+            <div className={layoutStyles.harmsColumnWrapper}>
+              <div className={layoutStyles.harmsColumn}>
+                <div className={layoutStyles.harmsIcon}><StaticImage src="../images/housing_corporatization.svg" alt="Exclusionary Listings" /></div>
+                <div className={layoutStyles.harmsColumnContent}>
+                  <h3>Housing corporatization</h3>
+                  <p>Digital property management tools are enabling companies to acquire and manage vast portfolios of single-family properties, often optimizing profit at the renters’ expense.</p>
+                </div>
+              </div>
+              <div className={layoutStyles.harmsColumn}>
+                <div className={layoutStyles.harmsIcon}><StaticImage src="../images/venture_capital.svg" alt="Exclusionary Listings" /></div>
+                <div className={layoutStyles.harmsColumnContent}>
+                  <h3>Venture capital pressures</h3>
+                  <p>Proptech brings in venture capital, whose model pressures companies to sacrifice what’s in the best interest of renters and potential homeowners to provide maximum returns to investors.</p>
+                </div>
+              </div>
             </div>
-            <div className={layoutStyles.column}>
-              <h3>Corporate Practice</h3>
-              <p className={layoutStyles.columnContent}>We will work with companies who operate in this ecosystem to develop practices, standards, programming, and tools that can help prevent the types of harm identified in our research.</p>
-            </div>
+            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href=""><button className={layoutStyles.button}>Read the summary report</button></a></div>
+            <div className={layoutStyles.clearFix}></div>
+            <div className={layoutStyles.clearFix}></div>
           </div>
         </div>
       </div>
       <div className={layoutStyles.panel + ' ' + layoutStyles.smallPanel}>
         <a id="section3"></a>
-        <div className={layoutStyles.paperContent}>
-          <h2>our research papers</h2>
-          <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/">
-            <div className={layoutStyles.paperPanel + ' ' + layoutStyles.paperPanelLeft}>
-              <div className={layoutStyles.paperPanelContent}>
-                <h2>Tech bias in tenant screening</h2>
-                <p>It’s time to take a closer look at tenant screening tools that can be the gateway to rental housing and the impact they have on housing accessibility.</p>
-                <div className={layoutStyles.moreButton}>
-                  More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
-                </div>
+        <div className={layoutStyles.buildingContentWrapper}>
+          <div className={layoutStyles.buildingContent}>
+            <h2>What we can do</h2>
+            <p className={layoutStyles.subtitle}>an ethical practice guide for proptech companies</p>
+            <p>Proptech companies can adopt business practices today that reduce (and even reverse) existing bias and inequity. The Ethical Practice Guide offers a framework to ensure their work helps end our housing crisis, not make it worse.</p>
+            <div className={layoutStyles.columnWrapper}>
+              <div className={layoutStyles.column}>
+                <h3>1. education</h3>
+                <p className={layoutStyles.columnContent}>Implement a company-wide education program that highlights the history and context of housing inequity and explores the way your company fits into that story</p>
+              </div>
+              <div className={layoutStyles.column}>
+                <h3>2. testing</h3>
+                <p className={layoutStyles.columnContent}>Utilize a data minimization framework and discrimination testing to proactively reduce harm and measure impact</p>
+              </div>
+              <div className={layoutStyles.column}>
+                <h3>3. employee engagement</h3>
+                <p className={layoutStyles.columnContent}>Provide clear, actionable pathways for employees to raise ideas, concerns, and opportunities for improvement</p>
               </div>
             </div>
-          </a>
-          <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/11/01/rent-to-own-the-american-dream-paper/">
-            <div className={layoutStyles.paperPanel}>
-              <div className={layoutStyles.paperPanelContent}>
-                <h2>Rent to own the American dream</h2>
-                <p>Aspiring homeowners are turning to alternative home financing options such as rent-to-own. But this model can be just as perilous as it is promising.</p>
-                <div className={layoutStyles.moreButton}>
-                  More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
-                </div>
+            <div className={layoutStyles.columnWrapper}>
+              <div className={layoutStyles.column}>
+                <h3>4. transparency</h3>
+                <p className={layoutStyles.columnContent}>Provide transparent and easy-to-understand information for users and customers</p>
+              </div>
+              <div className={layoutStyles.column}>
+                <h3>5. recourse</h3>
+                <p className={layoutStyles.columnContent}>Provide opportunities for customers or stakeholders who feel like they’ve been harmed to seek recourse</p>
+              </div>
+              <div className={layoutStyles.column}>
+                <h3>6. community engagement</h3>
+                <p className={layoutStyles.columnContent}>Engage in the broader societal conversation about housing—and use your position to advocate for change</p>
               </div>
             </div>
-          </a>
-          <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/06/29/sold-to-the-highest-bidder-how-tech-is-cashing-in-on-the-american-dream/">
-            <div className={layoutStyles.paperPanel}>
-              <div className={layoutStyles.paperPanelContent}>
-                <h2>Sold to the highest bidder</h2>
-                <p>Tech is enabling an emerging new class of corporate landlords that exacerbate harm and take advantage of increasingly desperate renters and would-be homeowners.</p>
-                <div className={layoutStyles.moreButton}>
-                  More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
-        <a id="section4"></a>
-        <Landscape></Landscape>
-      </div>
-      <div className={layoutStyles.panel + ' ' + layoutStyles.flexPanel}>
-        <a id="section4"></a>
-        <div className={layoutStyles.bottomContentWrapper}>
-          <div className={layoutStyles.bottomContent}>
-            <h2>Areas for Research</h2>
-            <p>Our initial landscape assessment revealed harms that these tools and business models could potentially exacerbate—ultimately perpetuating bias and inequity in housing. Over the next year, we will explore these issues in depth in our working papers.</p>
-            <div className={layoutStyles.clearFix}></div>
-            <div className={layoutStyles.harmsItem}>
-              <div className={layoutStyles.harmsIconLg}><StaticImage src="../images/harms1.png" alt="Exclusionary Listings" /></div>
-              <h3>Inaccurate Background Checks</h3>
-              <p>Tenant screening includes background checks that may search outdated or <a target="_blank" title="Inaccurate Databases" href="https://themarkup.org/locked-out/2021/01/11/the-obscure-yet-powerful-tenant-screening-industry-is-finally-getting-some-scrutiny">inaccurate databases</a>. In particular, criminal history records can show expunged convictions or unlawful arrests that did not lead to any charges. Eviction records are notoriously inaccurate, which will undoubtedly come into play as the COVID eviction moratoria begin to lift. Landlords may unknowingly make a housing determination based on inaccurate information when they’re only shown the final outcome of an applicant’s third-party assessment, rather than the underlying reports. When this happens, prospective tenants can be barred from housing without justification or <a target="_blank" title="Legal Rights" href="https://www.dfeh.ca.gov/wp-content/uploads/sites/32/2020/04/FairHousingCriminalHistoryFAQ_ENG.pdf">their legal right</a> to an <a target="_blank" title="Individualized Assessment" href="https://www.hud.gov/sites/documents/HUD_OGCGUIDAPPFHASTANDCR.PDF">individualized assessment</a>.</p>
-            </div>
-            <div className={layoutStyles.harmsItem}>
-              <div className={layoutStyles.harmsIcon}><StaticImage src="../images/harms2.png" alt="Exclusionary Listings" /></div>
-              <h3>Predatory Ownership Schemes</h3>
-              <p>Payment plan, rent-to-own, and home swap homebuying models have historically targeted low-income communities of color with home “ownership” programs that place all of the risk and almost none of the benefit of homeownership onto the borrower. Do rent-to-own and other payment plan homeownership companies put a shine on age-old <a target="_blank" title="Contract-for-deed" href="https://www.npr.org/local/309/2019/05/30/728122642/contract-buying-robbed-black-families-in-chicago-of-billions">contract-for-deed</a> schemes that conned homeowners of color out of wealth-building opportunities for generations? How might those contract terms, such as the potential for eviction based on one late payment, exacerbate housing instability for vulnerable people, historically and disproportionately people of color?</p>
-            </div>
-            <div className={layoutStyles.harmsItem}>
-              <div className={layoutStyles.harmsIcon}><StaticImage src="../images/harms3.png" alt="Exclusionary Listings" /></div>
-              <h3>Exclusionary Listings</h3>
-              <p>Companies like Redfin restrict listing privileges and white-glove services to owners with homes valued above a certain amount. Because of <a target="_blank" title="Racism in Home Appraisal" href="https://www.npr.org/2021/05/21/998536881/a-black-woman-says-she-had-to-hide-her-race-to-get-a-fair-home-appraisal">longstanding racism in the home appraisal process</a>, this practice can <a target="_blank" title="Limiting Access" href="https://www.jsonline.com/story/news/local/milwaukee/2020/10/29/milwaukee-cited-redfin-lawsuit-alleging-redlining-discrimination/6070558002/">unfairly limit access to tools for homeowners of color</a>, potentially violating the Fair Housing Act.</p>
-            </div>
-            <div className={layoutStyles.harmsItem}>
-              <div className={layoutStyles.harmsIconLg}><StaticImage src="../images/harms4.png" alt="Exclusionary Listings" /></div>
-              <h3>Hard-Coding Exclusionary Lending</h3>
-              <p>Many years of <a target="_blank" title="Exclusionary Lending" href="https://www.theatlantic.com/business/archive/2014/05/the-racist-housing-policy-that-made-your-neighborhood/371439/">exclusionary lending</a> by banks contributed to the housing segregation and racial wealth inequities we see today. If existing housing market data shaped by <a target="_blank" title="Racist Housing Policies" href="https://www.nytimes.com/2020/09/18/business/digital-mortgages.html">racist housing policies</a> are used to train loan origination software, bias will be hard-coded in digital home financing products—the very products that promise to expand access to customers that traditional banks have discriminated against. This may cause first-time buyers to be targeted for <a target="_blank" title="Onerous Loan Terms" href="https://www.theatlantic.com/business/archive/2018/04/rent-to-own-redlining/557588/">onerous loan terms</a> and higher interest rates when navigating these pathways to homeownership. Bias in lending decisions will only exacerbate inequity for those who are not served by traditional financing, and could contribute to regressive homeownership costs.</p>
-            </div>
-            <div className={layoutStyles.clearFix}></div>
-            <div className={layoutStyles.clearFix}></div>
+            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href=""><button className={layoutStyles.button + ' ' + layoutStyles.buttonDark}>Download the guide</button></a></div>
           </div>
         </div>
       </div>
       <div className={layoutStyles.panel + ' ' + layoutStyles.smallPanel}>
-        <div class={layoutStyles.footerContent}>
+        <a id="section4"></a>
+        <div className={layoutStyles.goingContentWrapper}>
+          <div className={layoutStyles.goingContent}>
+            <h2>Where we're going</h2>
+            <p className={layoutStyles.subtitle}>the initiative focus for the coming years</p>
+            <div className={layoutStyles.goingColumnWrapper}>
+              <div className={layoutStyles.goingColumn}>
+                <h3>policy advocacy</h3>
+                <p className={layoutStyles.goingColumnContent}>Working closely with partners from across the housing ecosystem, we’ll advance public policy that protects against the worst potential harms of Proptech. We’re starting by investigating tenant screening tools to understand whether and how they may result in discrimination. We’ll use this research to craft strategic, targeted policy solutions.</p>
+              </div>
+              <div className={layoutStyles.goingColumn}>
+                <h3>corporate practice</h3>
+                <p className={layoutStyles.goingColumnContent}>Over the course of our research we’ve connected with Proptech founders, executives, and employees who express a desire to develop better ethical practices as they grow their companies. We have outlined a practice guide that all Proptech companies can adopt to mitigate harm and we’ll provide resources and guidance to those that take action to implement it.</p>
+              </div>
+              <div className={layoutStyles.goingColumn}>
+                <h3>continued research</h3>
+                <p className={layoutStyles.goingColumnContent}>The Proptech sector is extremely fluid, and the market dynamics are changing quickly. We’ll continue to follow the space and produce reports as new areas of interest or concern emerge. We’re currently tracking the rise of crypto and blockchain in the Proptech sector and plan to release a briefing on the topic in mid-2023.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={layoutStyles.panel + ' ' + layoutStyles.smallPanel}>
+          <a id="section5"></a>
+          <div className={layoutStyles.paperContent}>
+            <div className={layoutStyles.paperContentTitleWrapper}>
+              <h2>Our research</h2>
+              <p className={layoutStyles.subtitle}>Read our research papers for a deeper dive</p>
+            </div>
+            <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/">
+              <div className={layoutStyles.paperPanel + ' ' + layoutStyles.paperPanelLeft}>
+                <div className={layoutStyles.paperPanelContent}>
+                  <h2>Tech bias in tenant screening</h2>
+                  <p>It’s time to take a closer look at tenant screening tools that can be the gateway to rental housing and the impact they have on housing accessibility.</p>
+                  <div className={layoutStyles.moreButton}>
+                    More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/11/01/rent-to-own-the-american-dream-paper/">
+              <div className={layoutStyles.paperPanel}>
+                <div className={layoutStyles.paperPanelContent}>
+                  <h2>Rent to own the American dream</h2>
+                  <p>Aspiring homeowners are turning to alternative home financing options such as rent-to-own. But this model can be just as perilous as it is promising.</p>
+                  <div className={layoutStyles.moreButton}>
+                    More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/06/29/sold-to-the-highest-bidder-how-tech-is-cashing-in-on-the-american-dream/">
+              <div className={layoutStyles.paperPanel}>
+                <div className={layoutStyles.paperPanelContent}>
+                  <h2>Sold to the highest bidder</h2>
+                  <p>Tech is enabling an emerging new class of corporate landlords that exacerbate harm and take advantage of increasingly desperate renters and would-be homeowners.</p>
+                  <div className={layoutStyles.moreButton}>
+                    More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={layoutStyles.panel + ' ' + layoutStyles.smallPanel}>
+        <div className={layoutStyles.footerContent}>
           <div className={layoutStyles.signupSection}>
             <h2>TAKE ACTION</h2>
             <p>Sign up for updates on our Tech, Bias, and Housing research, educational events, and opportunities to get involved.</p>
