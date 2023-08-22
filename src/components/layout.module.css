@@ -372,21 +372,31 @@ a:hover {
   padding: 10px;
   text-align: left;
 }
+.paper-content-title-wrapper p {
+  margin-bottom: .5em;
+}
+.paper-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.paper-panel-wrapper {
+  margin-top: .5em;
+  flex-basis: 25%;
+}
 .paper-panel {
-  display:  inline-block;
   background-color: #ff8144;
-  width: 32%;
   position: relative;
   vertical-align: top;
-  margin-top: 1em;
-  margin-right: 1%;
+  height: 100%;
+  margin-right: .5em;
+}
+.paper-panel-last {
+  margin-right: 0;
 }
 .paper-panel:hover {
   background-color: #C74200;
   cursor: pointer;
-}
-.paper-panel-left {
-  margin-left: 1%;
 }
 .paper-panel-content {
   padding: 15%;
@@ -400,7 +410,6 @@ a:hover {
   line-height: 1.05em;
 }
 .paper-panel-content p {
-  min-height: 6.6em;
   text-align: left;
 }
 .more-button {
@@ -453,17 +462,17 @@ a:hover {
     border-radius: 0;
     height: 3em;
     font-size: 1.2em;
-    border: 3px #ff8144 solid;
+    border: 3px #006AC3 solid;
     border-radius: .5em;
     cursor: pointer;
-    background-color: #ff8144;
+    background-color: #006AC3;
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
 }
 .signup-button:hover {
     background-color: transparent;
-    color: #ff8144;
+    color: #006AC3;
 }
 .footer {
   margin-top: 60px;
@@ -554,11 +563,14 @@ a:hover {
     font-size: 1em;
   }
 
+  .paper-panel-wrapper {
+    flex-basis: 50%;
+  }
+  .paper-panel-second {
+    margin-right: 0;
+  }
   .paper-panel h2 {
     font-size: 1.6em;
-  }
-  .paper-panel p {
-    min-height: 7em;
   }
 
   .column {
@@ -661,15 +673,9 @@ a:hover {
 
   /*FIFTH PANEL*/
   .paper-panel {
-    display: block;
-    width: 80%;
-    margin: 1em auto;
   }
   .paper-panel-content {
     padding: 2em;
-  }
-  .paper-panel-content p {
-    min-height: 4em;
   }
 
   /*BOTTOM CONTENT*/
@@ -702,8 +708,12 @@ a:hover {
     width: 90%;
     max-width: 90%;
   }
-  .paper-panel-content p {
-    min-height: 6em;
+
+  .paper-panel-wrapper {
+    flex-basis: 100%;
+  }
+  .paper-panel {
+    margin-right: 0;
   }
 }
 
@@ -778,10 +788,10 @@ a:hover {
       border-radius: 0;
       height: 2.6em;
       font-size: .8em;
-      border: 3px #ff8144 solid;
+      border: 3px #006AC3 solid;
       border-radius: .5em;
       cursor: pointer;
-      background-color: #ff8144;
+      background-color: #006AC3;
       color: #fff;
       text-transform: uppercase;
       font-weight: bold;

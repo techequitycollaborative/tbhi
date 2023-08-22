@@ -62,7 +62,7 @@ const Layout = ({ pageTitle, children }) => {
               <p>As unprecedented capital investment flows into this space, venture-backed companies’ winner-take-all approach to growth has the potential to exacerbate inequality in the housing space. Under these conditions, startups’ disruption mindset creates a risky landscape that could—without ethical frameworks and processes to ensure equitable outcomes—dramatically accelerate racial and economic inequities.</p>
               <p>The Tech, Bias, and Housing Initiative examines these potential harms and biases through comprehensive research, corporate practice, and public policy advocacy.</p>
             </div>
-            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2023/04/25/the-promises-and-perils-of-residential-proptech-year-1-summary-report/"><button className={layoutStyles.downloadButton + ' ' + layoutStyles.tallButton}>Download the summary report</button></a></div>
+            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href=""><button className={layoutStyles.downloadButton + ' ' + layoutStyles.tallButton}>Read the privacy, tech, and housing paper</button></a></div>
             <AnchorLink to="/#section2" title="Down" className={layoutStyles.downLink}>
               <p>What we know</p>
               <span className={layoutStyles.chevronDown}></span>
@@ -184,39 +184,60 @@ const Layout = ({ pageTitle, children }) => {
               <h2>Our research</h2>
               <p className={layoutStyles.subtitle}>Read our research papers for a deeper dive</p>
             </div>
-            <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/">
-              <div className={layoutStyles.paperPanel + ' ' + layoutStyles.paperPanelLeft}>
-                <div className={layoutStyles.paperPanelContent}>
-                  <h2>Tech bias in tenant screening</h2>
-                  <p>It’s time to take a closer look at tenant screening tools that can be the gateway to rental housing and the impact they have on housing accessibility.</p>
-                  <div className={layoutStyles.moreButton}>
-                    More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
+            <div className={layoutStyles.paperWrapper}>
+              <div className={layoutStyles.paperPanelWrapper}>
+                <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/02/23/tech-bias-and-housing-initiative-tenant-screening/">
+                  <div className={layoutStyles.paperPanel}>
+                    <div className={layoutStyles.paperPanelContent}>
+                      <h2>Tech bias in tenant screening</h2>
+                      <p>It’s time to take a closer look at tenant screening tools that can be the gateway to rental housing and the impact they have on housing accessibility.</p>
+                      <div className={layoutStyles.moreButton}>
+                        More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
-            </a>
-            <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/11/01/rent-to-own-the-american-dream-paper/">
-              <div className={layoutStyles.paperPanel}>
-                <div className={layoutStyles.paperPanelContent}>
-                  <h2>Rent to own the American dream</h2>
-                  <p>Aspiring homeowners are turning to alternative home financing options such as rent-to-own. But this model can be just as perilous as it is promising.</p>
-                  <div className={layoutStyles.moreButton}>
-                    More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
+              <div className={layoutStyles.paperPanelWrapper}>
+                <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/11/01/rent-to-own-the-american-dream-paper/">
+                  <div className={layoutStyles.paperPanel + ' ' + layoutStyles.paperPanelSecond}>
+                    <div className={layoutStyles.paperPanelContent}>
+                      <h2>Rent to own the American dream</h2>
+                      <p>Aspiring homeowners are turning to alternative home financing options such as rent-to-own. But this model can be just as perilous as it is promising.</p>
+                      <div className={layoutStyles.moreButton}>
+                        More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
-            </a>
-            <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/06/29/sold-to-the-highest-bidder-how-tech-is-cashing-in-on-the-american-dream/">
-              <div className={layoutStyles.paperPanel}>
-                <div className={layoutStyles.paperPanelContent}>
-                  <h2>Sold to the highest bidder</h2>
-                  <p>Tech is enabling an emerging new class of corporate landlords that exacerbate harm and take advantage of increasingly desperate renters and would-be homeowners.</p>
-                  <div className={layoutStyles.moreButton}>
-                    More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
+              <div className={layoutStyles.paperPanelWrapper}>
+                <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2022/06/29/sold-to-the-highest-bidder-how-tech-is-cashing-in-on-the-american-dream/">
+                  <div className={layoutStyles.paperPanel}>
+                    <div className={layoutStyles.paperPanelContent}>
+                      <h2>Sold to the highest bidder</h2>
+                      <p>Tech is enabling an emerging new class of corporate landlords that exacerbate harm and take advantage of increasingly desperate renters and would-be homeowners.</p>
+                      <div className={layoutStyles.moreButton}>
+                        More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
-            </a>
+              <div className={layoutStyles.paperPanelWrapper}>
+                <a className={layoutStyles.moreLink} target="_blank" href="">
+                  <div className={layoutStyles.paperPanel + ' ' + layoutStyles.paperPanelLast}>
+                    <div className={layoutStyles.paperPanelContent}>
+                      <h2>Privacy, tech, and fair housing</h2>
+                      <p>Algorithms and data are playing an increasing role in housing. We need to protect privacy and the right to housing in an increasingly digital world.</p>
+                      <div className={layoutStyles.moreButton}>
+                        More <StaticImage className={layoutStyles.moreImage} src="../images/right.svg" alt="More" />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
