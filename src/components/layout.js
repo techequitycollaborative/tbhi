@@ -62,7 +62,7 @@ const Layout = ({ pageTitle, children }) => {
               <p>As unprecedented capital investment flows into this space, venture-backed companies’ winner-take-all approach to growth has the potential to exacerbate inequality in the housing space. Under these conditions, startups’ disruption mindset creates a risky landscape that could—without ethical frameworks and processes to ensure equitable outcomes—dramatically accelerate racial and economic inequities.</p>
               <p>The Tech, Bias, and Housing Initiative examines these potential harms and biases through comprehensive research, corporate practice, and public policy advocacy.</p>
             </div>
-            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href=""><button className={layoutStyles.downloadButton + ' ' + layoutStyles.tallButton}>Read the privacy, tech, and housing paper</button></a></div>
+            <div className={layoutStyles.buttonWrapper}><a className={layoutStyles.downloadLink} target="_blank" href="https://techequitycollaborative.org/2023/08/22/privacy-technology-and-fair-housing-in-a-nutshell/"><button className={layoutStyles.downloadButton + ' ' + layoutStyles.tallButton}>Read the privacy, tech, and housing paper</button></a></div>
             <AnchorLink to="/#section2" title="Down" className={layoutStyles.downLink}>
               <p>What we know</p>
               <span className={layoutStyles.chevronDown}></span>
@@ -225,7 +225,7 @@ const Layout = ({ pageTitle, children }) => {
                 </a>
               </div>
               <div className={layoutStyles.paperPanelWrapper}>
-                <a className={layoutStyles.moreLink} target="_blank" href="">
+                <a className={layoutStyles.moreLink} target="_blank" href="https://techequitycollaborative.org/2023/08/22/privacy-technology-and-fair-housing-in-a-nutshell/">
                   <div className={layoutStyles.paperPanel + ' ' + layoutStyles.paperPanelLast}>
                     <div className={layoutStyles.paperPanelContent}>
                       <h2>Privacy, tech, and fair housing</h2>
